@@ -15,7 +15,7 @@
 }
 
 .logo {
-  height: 2.2rem;
+  height: 5rem;
 }
 
 /**************************/
@@ -545,11 +545,9 @@
 }
 
 .cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
+  background-image: linear-gradient(to right bottom,
       rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
-    ),
+      rgba(230, 125, 34, 0.35)),
     url("/public/img/eating.jpg");
   background-size: cover;
   background-position: center;
