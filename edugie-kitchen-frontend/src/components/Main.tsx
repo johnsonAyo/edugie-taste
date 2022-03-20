@@ -10,6 +10,7 @@ import {
   IoWaterOutline,
   IoWalletOutline,
 } from "react-icons/io5";
+import MealCategories from "./MealCategories";
 
 function Main() {
   return (
@@ -19,15 +20,15 @@ function Main() {
         <div className="hero">
           <div className="hero-text-box">
             <h1 className="heading-primary">
-              A healthy meal delivered to your door, every single day
+              Edugie Kitchen, Home of Quality Foods
             </h1>
             <p className="hero-description">
-              The smart 365-days-per-year food subscription that will make you
-              eat healthy again. Tailored to your personal tastes and
-              nutritional needs.
+              Delicious Meals which ranges from different types of rice to
+              swallow and different types of proteins. Also available is a
+              variety of pepper soups
             </p>
             <a href="#cta" className="btn btn--full margin-right-sm">
-              Start eating well
+            Place your Orders Now
             </a>
 
             <a href="#how" className="btn btn--outline">
@@ -113,13 +114,12 @@ function Main() {
           <div className="step-text-box">
             <p className="step-number">01</p>
             <h3 className="heading-tertiary">
-              Tell us what you like (and what not)
+              Select and order Your Desired Meal from our Website
             </h3>
             <p className="step-description">
-              Never again waste time thinking about what to eat! Omnifood AI
-              will create a 100% personalized weekly meal plan just for you. It
-              makes sure you get all the nutrients and vitamins you need, no
-              matter what diet you follow!
+              Never again waste time thinking about what to eat! Edugie kitchen
+              got you and makes sure you get all the nutrients and vitamins you
+              need, no matter what diet you follow!
             </p>
           </div>
 
@@ -142,19 +142,18 @@ function Main() {
           </div>
           <div className="step-text-box">
             <p className="step-number">02</p>
-            <h3 className="heading-tertiary">Approve your weekly meal plan</h3>
+            <h3 className="heading-tertiary">
+              Wait For confirmation Call of your order from our staff{" "}
+            </h3>
             <p className="step-description">
-              Once per week, approve the meal plan generated for you by Omnifood
-              AI. You can change ingredients, swap entire meals, or even add
-              your own recipes.
+              Edugie home chef will call you to confirm the order placed and
+              tell you how long its going to take to make your desired meal
             </p>
           </div>
 
           <div className="step-text-box">
             <p className="step-number">03</p>
-            <h3 className="heading-tertiary">
-              Receive meals at convenient time
-            </h3>
+            <h3 className="heading-tertiary">Receive meals at Sheduled time</h3>
             <p className="step-description">
               Best chefs in town will cook your selected meal every day, and we
               will deliver it to your door whenever works best for you. You can
@@ -175,54 +174,15 @@ function Main() {
       <section className="section-meals" id="meals">
         <div className="container center-text">
           <span className="subheading">Meals</span>
-          <h2 className="heading-secondary">
-            Omnifood AI chooses from 5,000+ recipes
-          </h2>
+          <h2 className="heading-secondary">Edugie Home food Menu</h2>
         </div>
 
         <div className="container grid grid--3-cols margin-bottom-md">
-          <div className="meal">
-            <img
-              src="img/meals/meal-1.jpg"
-              className="meal-img"
-              alt="Japanese Gyozas"
-            />
-            <div className="meal-content">
-              <div className="meal-tags">
-                <span className="tag tag--vegetarian">Vegetarian</span>
-              </div>
-              <p className="meal-title">Japanese Gyozas</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IoFlameOutline
-                    className="meal-icon"
-                    name="flame-outline"
-                  ></IoFlameOutline>
-                  <span>
-                    <strong>650</strong> calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IoRestaurantOutline
-                    className="meal-icon"
-                    name="restaurant-outline"
-                  ></IoRestaurantOutline>
-                  <span>
-                    NutriScore &reg; <strong>74</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IoStarOutline
-                    className="meal-icon"
-                    name="star-outline"
-                  ></IoStarOutline>
-                  <span>
-                    <strong>4.9</strong> rating (537)
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <MealCategories />
+          <MealCategories />
+          <MealCategories />
+          <MealCategories />
+          <MealCategories />
 
           <div className="meal">
             <img
