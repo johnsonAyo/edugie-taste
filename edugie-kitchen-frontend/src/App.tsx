@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
-import Nav from "./components/Nav";
+import Main from "./components/Main";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Nav />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </BrowserRouter>
   );
