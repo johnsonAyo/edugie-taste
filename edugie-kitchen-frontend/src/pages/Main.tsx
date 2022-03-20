@@ -1,5 +1,8 @@
-import Nav from "./Nav";
-import Footer from "./Footer";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import { mealCategories } from "../data/data";
+import Orders from "../components/Orders";
 import {
   IoFlameOutline,
   IoRestaurantOutline,
@@ -10,9 +13,13 @@ import {
   IoWaterOutline,
   IoWalletOutline,
 } from "react-icons/io5";
-import MealCategories from "./MealCategories";
+import MealCategories from "../components/MealCategories";
 
 function Main() {
+  const categoryElement = mealCategories.map((mealCategory: any) => {
+    return <MealCategories {...mealCategory} />;
+  });
+
   return (
     <>
       <Nav />
@@ -28,7 +35,7 @@ function Main() {
               variety of pepper soups
             </p>
             <a href="#cta" className="btn btn--full margin-right-sm">
-            Place your Orders Now
+              Place your Orders Now
             </a>
 
             <a href="#how" className="btn btn--outline">
@@ -178,131 +185,9 @@ function Main() {
         </div>
 
         <div className="container grid grid--3-cols margin-bottom-md">
-          <MealCategories />
-          <MealCategories />
-          <MealCategories />
-          <MealCategories />
-          <MealCategories />
-
-          <div className="meal">
-            <img
-              src="img/meals/meal-2.jpg"
-              className="meal-img"
-              alt="Avocado Salad"
-            />
-            <div className="meal-content">
-              <div className="meal-tags">
-                <span className="tag tag--vegan">Vegan</span>
-                <span className="tag tag--paleo">Paleo</span>
-              </div>
-              <p className="meal-title">Avocado Salad</p>
-              <ul className="meal-attributes">
-                <li className="meal-attribute">
-                  <IoFlameOutline
-                    className="meal-icon"
-                    name="flame-outline"
-                  ></IoFlameOutline>
-                  <span>
-                    <strong>400</strong> calories
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IoRestaurantOutline
-                    className="meal-icon"
-                    name="restaurant-outline"
-                  ></IoRestaurantOutline>
-                  <span>
-                    NutriScore &reg; <strong>92</strong>
-                  </span>
-                </li>
-                <li className="meal-attribute">
-                  <IoStarOutline
-                    className="meal-icon"
-                    name="star-outline"
-                  ></IoStarOutline>
-                  <span>
-                    <strong>4.8</strong> rating (441)
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="diets">
-            <h3 className="heading-tertiary">Works with any diet:</h3>
-            <ul className="list">
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Vegetarian</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Vegan</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Pescatarian</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Gluten-free</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Lactose-free</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Keto</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Paleo</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Low FODMAP</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Kid-friendly</span>
-              </li>
-            </ul>
-          </div>
+          {categoryElement}
         </div>
-
-        <div className="container all-recipes">
-          <a href="#" className="link">
-            See all recipes &rarr;
-          </a>
-        </div>
+        <Orders />
       </section>
 
       <section className="section-testimonials" id="testimonials">
