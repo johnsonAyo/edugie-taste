@@ -1,0 +1,8 @@
+node_modules/
+lib/
+config.env/
+/config.env/
+/node_modules
+babel.config.js/
+jest.config.ts/
+.prettier.rc/
