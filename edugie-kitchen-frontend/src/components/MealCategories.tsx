@@ -3,7 +3,6 @@ import {
   IoRestaurantOutline,
   IoStarOutline,
 } from "react-icons/io5";
-import { Link } from "react-router-dom";
 function MealCategories(props: any) {
   const { id, img, meal_category, calories, nutriScore, ratings } = props;
   return (

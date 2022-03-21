@@ -3,17 +3,17 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { mealCategories } from "../data/data";
 import Orders from "../components/Orders";
+
 import {
-  IoFlameOutline,
-  IoRestaurantOutline,
-  IoStarOutline,
   IoCheckmarkSharp,
   IoFlashOutline,
   IoMap,
   IoWaterOutline,
   IoWalletOutline,
 } from "react-icons/io5";
+
 import MealCategories from "../components/MealCategories";
+import Form from "../components/Form";
 
 function Main() {
   const categoryElement = mealCategories.map((mealCategory: any) => {
@@ -90,30 +90,12 @@ function Main() {
           </div>
         </div>
       </section>
-      <section className="section-featured">
-        <div className="container">
-          <h2 className="heading-featured-in">As featured in</h2>
-          <div className="logos">
-            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
-            <img
-              src="img/logos/business-insider.png"
-              alt="Business Insider logo"
-            />
-            <img
-              src="img/logos/the-new-york-times.png"
-              alt="The New York Times logo"
-            />
-            <img src="img/logos/forbes.png" alt="Forbes logo" />
-            <img src="img/logos/usa-today.png" alt="USA Today logo" />
-          </div>
-        </div>
-      </section>
 
       <section className="section-how" id="how">
         <div className="container">
           <span className="subheading">How it works</span>
           <h2 className="heading-secondary">
-            Your daily dose of health in 3 simple steps
+            Getting your Desired Meal cant be Easier
           </h2>
         </div>
 
@@ -121,15 +103,15 @@ function Main() {
           <div className="step-text-box">
             <p className="step-number">01</p>
             <h3 className="heading-tertiary">
-              Select and order Your Desired Meal from our Website
+              Tell us what you like (and what not)
             </h3>
             <p className="step-description">
-              Never again waste time thinking about what to eat! Edugie kitchen
-              got you and makes sure you get all the nutrients and vitamins you
-              need, no matter what diet you follow!
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
             </p>
           </div>
-
           <div className="step-img-box">
             <img
               src="img/app/app-screen-1.png"
@@ -149,42 +131,22 @@ function Main() {
           </div>
           <div className="step-text-box">
             <p className="step-number">02</p>
-            <h3 className="heading-tertiary">
-              Wait For confirmation Call of your order from our staff{" "}
-            </h3>
+            <h3 className="heading-tertiary">Approve your weekly meal plan</h3>
             <p className="step-description">
-              Edugie home chef will call you to confirm the order placed and
-              tell you how long its going to take to make your desired meal
+              Once per week, approve the meal plan generated for you by Omnifood
+              AI. You can change ingredients, swap entire meals, or even add
+              your own recipes.
             </p>
-          </div>
-
-          <div className="step-text-box">
-            <p className="step-number">03</p>
-            <h3 className="heading-tertiary">Receive meals at Sheduled time</h3>
-            <p className="step-description">
-              Best chefs in town will cook your selected meal every day, and we
-              will deliver it to your door whenever works best for you. You can
-              change delivery schedule and address daily!
-            </p>
-          </div>
-          <div className="step-img-box">
-            <img
-              src="img/app/app-screen-3.png"
-              className="step-img"
-              alt="iPhone app
-            delivery screen"
-            />
           </div>
         </div>
       </section>
 
       <section className="section-meals" id="meals">
         <div className="container center-text">
-          <span className="subheading">Meals</span>
-          <h2 className="heading-secondary">Edugie Home food Menu</h2>
+          <span className="subheading">Edugie Home Meals</span>
         </div>
 
-        <div className="container grid grid--3-cols margin-bottom-md">
+        <div className="container grid grid--3-cols  margin-bottom-md">
           {categoryElement}
         </div>
         <Orders />
@@ -348,108 +310,6 @@ function Main() {
           </h2>
         </div>
 
-        <div className="container grid grid--2-cols margin-bottom-md">
-          <div className="pricing-plan pricing-plan--starter">
-            <header className="plan-header">
-              <p className="plan-name">Starter</p>
-              <p className="plan-price">
-                <span>$</span>399
-              </p>
-              <p className="plan-text">per month. That's just $13 per meal!</p>
-            </header>
-            <ul className="list">
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>1 meal per day</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Order from 11am to 9pm</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Delivery is free</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="close-outline"
-                ></IoCheckmarkSharp>
-              </li>
-            </ul>
-            <div className="plan-sing-up">
-              <a href="#" className="btn btn--full">
-                Start eating well
-              </a>
-            </div>
-          </div>
-
-          <div className="pricing-plan pricing-plan--complete">
-            <header className="plan-header">
-              <p className="plan-name">Complete</p>
-              <p className="plan-price">
-                <span>$</span>649
-              </p>
-              <p className="plan-text">per month. That's just $11 per meal!</p>
-            </header>
-            <ul className="list">
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>
-                  <strong>2 meals</strong> per day
-                </span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>
-                  Order <strong>24/7</strong>
-                </span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Delivery is free</span>
-              </li>
-              <li className="list-item">
-                <IoCheckmarkSharp
-                  className="list-icon"
-                  name="checkmark-outline"
-                ></IoCheckmarkSharp>
-                <span>Get access to latest recipes</span>
-              </li>
-            </ul>
-            <div className="plan-sing-up">
-              <a href="#" className="btn btn--full">
-                Start eating well
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="container grid">
-          <aside className="plan-details">
-            Prices include all applicable taxes. You can cancel at any time.
-            Both plans include the following:
-          </aside>
-        </div>
-
         <div className="container grid grid--4-cols">
           <div className="feature">
             <IoWaterOutline
@@ -496,68 +356,7 @@ function Main() {
       </section>
 
       <section className="section-cta" id="cta">
-        <div className="container">
-          <div className="cta">
-            <div className="cta-text-box">
-              <h2 className="heading-secondary">
-                Get your first meal for free!
-              </h2>
-              <p className="cta-text">
-                Healthy, tasty and hassle-free meals are waiting for you. Start
-                eating well today. You can cancel or pause anytime. And the
-                first meal is on us!
-              </p>
-
-              <form className="cta-form" name="sign-up">
-                <div>
-                  <label htmlFor="full-name">Full Name</label>
-                  <input
-                    id="full-name"
-                    type="text"
-                    placeholder="John Smith"
-                    name="full-name"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email">Email address</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="me@example.com"
-                    name="email"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="select-where">
-                    Where did you hear from us?
-                  </label>
-                  <select id="select-where" name="select-where" required>
-                    <option value="">Please choose one option:</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtube">YouTube video</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="ad">Facebook ad</option>
-                    <option value="others">Others</option>
-                  </select>
-                </div>
-
-                <button className="btn btn--form">Sign up now</button>
-
-                {/* <!-- <input type="checkbox" />
-                <input type="number" /> --> */}
-              </form>
-            </div>
-            <div
-              className="cta-img-box"
-              role="img"
-              aria-label="Woman enjoying food"
-            ></div>
-          </div>
-        </div>
+        <Form />
       </section>
       <Footer />
     </>

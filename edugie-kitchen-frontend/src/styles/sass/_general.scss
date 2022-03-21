@@ -96,6 +96,7 @@ body {
   margin: 0 auto;
 }
 
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -290,3 +291,30 @@ body {
 strong {
   font-weight: 500;
 }
+
+
+
+
+@media screen and (max-width: 900px) {
+  .container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 2rem;
+    grid-template-columns: 1fr 1fr
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+}
+

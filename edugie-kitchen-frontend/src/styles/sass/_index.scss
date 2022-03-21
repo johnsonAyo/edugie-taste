@@ -256,6 +256,15 @@ Menu
   }
 }
 
+@media screen and (max-width: 700px) {
+  .btn-container {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;

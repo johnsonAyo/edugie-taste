@@ -28,7 +28,7 @@ function Nav() {
             </li>
             <li>
               <a className="main-nav-link" href="#pricing">
-                Pricing
+                Availabe Meals
               </a>
             </li>
             <li>
