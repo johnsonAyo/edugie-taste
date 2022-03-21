@@ -5,7 +5,6 @@ import { mealCategories } from "../data/data";
 import Orders from "../components/Orders";
 
 import {
-  IoCheckmarkSharp,
   IoFlashOutline,
   IoMap,
   IoWaterOutline,
