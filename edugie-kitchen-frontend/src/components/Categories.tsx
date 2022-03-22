@@ -3,29 +3,22 @@ import React from "react";
 const Categories = ({
   categories,
   filterItems,
+  onFilter,
 }: {
   categories: any;
   filterItems: any;
+  onFilter: (category: string) => void;
 }) => {
   return (
     <div className="btn-container">
       {categories.map(
-        (
-          category:
-            | boolean
-            | React.ReactChild
-            | React.ReactFragment
-            | React.ReactPortal
-            | null
-            | undefined,
-          index: React.Key | null | undefined
-        ) => {
+        (category: string, index: React.Key | null | undefined) => {
           return (
             <button
               type="button"
               className="filter-btn"
               key={index}
-              onClick={() => filterItems(category)}
+              onClick={() => onFilter(category)}
             >
               {category}
             </button>
