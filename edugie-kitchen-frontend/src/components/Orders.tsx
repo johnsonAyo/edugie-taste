@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
 import Categories from "./Categories";
-import { items } from "./../data/data";
 import FoodMenu from "./../api/api";
 
 function Orders() {
@@ -40,11 +39,7 @@ function Orders() {
             <h2>Available Meals</h2>
             <div className="underline"></div>
           </div>
-          <Categories
-            categories={categories}
-            onFilter={filterItems}
-            filterItems={menuItems}
-          />
+          <Categories categories={categories} onFilter={filterItems} />
           <Menu items={menuItems} />
         </section>
       </main>

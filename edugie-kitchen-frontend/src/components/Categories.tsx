@@ -2,11 +2,9 @@ import React from "react";
 
 const Categories = ({
   categories,
-  filterItems,
   onFilter,
 }: {
   categories: any;
-  filterItems: any;
   onFilter: (category: string) => void;
 }) => {
   return (
