@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { mealCategories } from "../data/data";
+import { mealCategories, testimonials } from "../data/data";
 import Orders from "../components/Orders";
+import Testimonials from "./../components/Testimonies";
 
 import {
   IoFlashOutline,
@@ -12,11 +13,14 @@ import {
 } from "react-icons/io5";
 
 import MealCategories from "../components/MealCategories";
-import Form from "../components/Form";
 
 function Main() {
   const categoryElement = mealCategories.map((mealCategory: any) => {
     return <MealCategories {...mealCategory} />;
+  });
+
+  const testimonyElement = testimonials.map((testimonial: any) => {
+    return <Testimonials {...testimonial} />;
   });
 
   return (
@@ -93,9 +97,7 @@ function Main() {
       <section className="section-how" id="how">
         <div className="container">
           <span className="subheading">How it works</span>
-          <h2 className="heading-secondary">
-            Getting your Desired Meal cant be Easier
-          </h2>
+          <h2 className="heading-secondary">Getting your desired meal Asap</h2>
         </div>
 
         <div className="container grid grid--2-cols grid--center-v">
@@ -149,6 +151,9 @@ function Main() {
           {categoryElement}
         </div>
         <Orders />
+        <div className="btn-grid">
+          <button className="btn"> Checkout Now</button>
+        </div>
       </section>
 
       <section className="section-testimonials" id="testimonials">
@@ -159,6 +164,7 @@ function Main() {
           </h2>
 
           <div className="testimonials">
+            {testimonyElement}
             <figure className="testimonial">
               <img
                 className="testimonial-img"
@@ -354,9 +360,7 @@ function Main() {
         </div>
       </section>
 
-      <section className="section-cta" id="cta">
-        <Form />
-      </section>
+      <section className="section-cta" id="cta"></section>
       <Footer />
     </>
   );

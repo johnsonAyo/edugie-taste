@@ -302,7 +302,8 @@
   column-gap: 8rem; }
 
 .testimonial-img {
-  width: 6.4rem;
+  height: 30%;
+  width: 30%;
   border-radius: 50%;
   margin-bottom: 1.2rem; }
 
@@ -949,6 +950,10 @@ body {
   /* Put transition on original "state" */
   /* transition: background-color 0.3s; */
   transition: all 0.3s; }
+
+.btn-grid {
+  display: flex;
+  justify-content: center; }
 
 .btn--full:link,
 .btn--full:visited {

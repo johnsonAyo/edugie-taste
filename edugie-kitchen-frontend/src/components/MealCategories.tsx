@@ -7,6 +7,7 @@ function MealCategories(props: any) {
   const { id, img, meal_category, calories, nutriScore, ratings } = props;
   return (
     <div className="meal">
+   
       <img key={id} src={img} className="meal-img" alt="Japanese Gyozas" />
       <div className="meal-content">
         <div className="meal-tags">

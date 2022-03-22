@@ -29,6 +29,34 @@ const mealCategories = [
   },
 ];
 
+const testimonials = [
+  {
+    id: 1,
+    img:
+      "https://media.istockphoto.com/photos/serbian-minced-meat-dish-with-rice-picture-id1313289366?k=20&m=1313289366&s=612x612&w=0&h=liFF0tVTCppz-FQmmkzBRzC_X8NGWXtNFDFa6XeNvWc=",
+    testimonial_text:
+      "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.",
+    testimonial_name: "Dave Bryson",
+  },
+  {
+    id: 2,
+    img:
+      "https://media.istockphoto.com/photos/serbian-minced-meat-dish-with-rice-picture-id1313289366?k=20&m=1313289366&s=612x612&w=0&h=liFF0tVTCppz-FQmmkzBRzC_X8NGWXtNFDFa6XeNvWc=",
+    testimonial_text:
+      "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.",
+    testimonial_name: "Dave Bryson",
+  },
+
+  {
+    id: 3,
+    img:
+      "https://media.istockphoto.com/photos/serbian-minced-meat-dish-with-rice-picture-id1313289366?k=20&m=1313289366&s=612x612&w=0&h=liFF0tVTCppz-FQmmkzBRzC_X8NGWXtNFDFa6XeNvWc=",
+    testimonial_text:
+      "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.",
+    testimonial_name: "Dave Bryson",
+  },
+];
+
 const items = [
   {
     id: 1,
@@ -139,4 +167,4 @@ const items = [
   },
 ];
 
-export { mealCategories, items };
+export { mealCategories, items, testimonials };

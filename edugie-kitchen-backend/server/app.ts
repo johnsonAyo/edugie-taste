@@ -1,12 +1,12 @@
 import express, { NextFunction, Request, Response } from "express";
 import morgan from "morgan";
 import helmet from "helmet";
+import cors from "cors";
 import mongoSanitize from "express-mongo-sanitize";
 import cookieParser from "cookie-parser";
 import mongoose from "mongoose";
 import ErrorHandler from "./utils/appError";
 import globalErrorHandler from "./controllers/errorController";
-
 import mealRoutes from "./routes/mealRoutes";
 
 // import { connectTestDB } from "./db/db";
@@ -17,6 +17,7 @@ dotenv.config({ path: "./config.env" });
 
 // Start express app
 const app = express();
+app.use(cors());
 
 // Set security HTTP headers
 app.use(helmet());

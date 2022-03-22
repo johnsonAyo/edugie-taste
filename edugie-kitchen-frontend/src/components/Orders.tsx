@@ -2,11 +2,15 @@ import { useState } from "react";
 import Menu from "./Menu";
 import Categories from "./Categories";
 import { items } from "./../data/data";
+import FoodMenu from "./../api/api";
+
 const allCategories = [
   "all",
   ...new Set(items.map((item: { category: any }) => item.category)),
 ];
+
 function Orders() {
+  FoodMenu();
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState(allCategories);
 
