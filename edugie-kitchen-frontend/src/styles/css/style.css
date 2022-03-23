@@ -13,7 +13,7 @@
 
 .logo {
   margin-top: 5rem;
-  width: 11%; }
+  width: 8%; }
 
 /**************************/
 /* NAVIGATION */
@@ -569,7 +569,7 @@
 
 .hero-img {
   border-radius: 2rem;
-  transition: all .2s; }
+  transition: all .8s; }
   .hero-img:hover {
     transform: scale(1.1); }
 
