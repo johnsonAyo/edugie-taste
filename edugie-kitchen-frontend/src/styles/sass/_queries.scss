@@ -1,5 +1,22 @@
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 
+.hero-text-box {
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+}
+
+.hero-img {
+  border-radius: 2rem;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
@@ -8,6 +25,10 @@
   .hero {
     max-width: 120rem;
   }
+
+  // .hero-text-box {
+  //   background-image: url("/public/img/eating.jpg");
+  // }
 
   .heading-primary {
     font-size: 4.4rem;
@@ -86,10 +107,6 @@
   .delivered-meals {
     justify-content: center;
     margin-top: 3.2rem;
-  }
-
-  .logos img {
-    height: 2.4rem;
   }
 
   .step-number {
@@ -256,9 +273,6 @@
     width: 80%;
   }
 
-  .logos img {
-    height: 1.2rem;
-  }
 
   .step-img-box:nth-child(2) {
     grid-row: 1;

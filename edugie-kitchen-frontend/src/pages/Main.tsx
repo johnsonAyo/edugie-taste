@@ -29,9 +29,7 @@ function Main() {
       <section className="section-hero">
         <div className="hero">
           <div className="hero-text-box">
-            <h1 className="heading-primary">
-              Edugie Kitchen, Home of Quality Foods
-            </h1>
+            <h1 className="heading-primary">EDUGIE HOMES (TASTE RIPPER)</h1>
             <p className="hero-description">
               Delicious Meals which ranges from different types of rice to
               swallow and different types of proteins. Also available is a
@@ -44,24 +42,21 @@ function Main() {
             <a href="#how" className="btn btn--outline">
               Learn more &darr;
             </a>
-            <div className="delivered-meals">
-              <div className="delivered-imgs">
-                <img
-                  src="./../img/customers/customer-1.jpg"
-                  alt="Customer photo"
-                />
-                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
-              </div>
-              <p className="delivered-text">
-                <span>250,000+</span> meals delivered last year!
-              </p>
-            </div>
           </div>
+
           <div className="hero-img-box">
+            <picture>
+              <source srcSet="img/home.jpeg" type="image/webp" />
+              <source srcSet="img/home.jpeg" type="image/jpeg" />
+
+              <img
+                src="img/home.jpeg"
+                className="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
+          </div>
+          {/* <div className="hero-img-box">
             <picture>
               <source srcSet="img/hero.webp" type="image/webp" />
               <source srcSet="img/hero-min.png" type="image/png" />
@@ -72,7 +67,7 @@ function Main() {
                 alt="Woman enjoying food, meals in storage container, and food bowls on a table"
               />
             </picture>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="section-featured">

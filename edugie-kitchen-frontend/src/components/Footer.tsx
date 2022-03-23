@@ -4,6 +4,7 @@ import {
   IoRestaurantOutline,
   IoStarOutline,
 } from "react-icons/io5";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
@@ -11,11 +12,9 @@ function Footer() {
         <div className="container grid grid--footer">
           <div className="logo-col">
             <a href="#" className="footer-logo">
-              <img
-                className="logo"
-                alt="Omnifood logo"
-                src="https://media.istockphoto.com/photos/slippers-isolate-on-a-white-background-picture-id1208578271?k=20&m=1208578271&s=612x612&w=0&h=qicwoCAmulUgPT8ueTg6PJ7Wq9bPQ8wdv1p8HKG_QAM="
-              />
+              <Link to="#">
+                <img className="logo" alt="" src="img/edugielogo.jpeg" />
+              </Link>
             </a>
 
             <ul className="social-links">

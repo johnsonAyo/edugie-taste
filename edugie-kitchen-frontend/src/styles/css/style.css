@@ -12,7 +12,8 @@
   position: relative; }
 
 .logo {
-  height: 5rem; }
+  margin-top: 5rem;
+  width: 11%; }
 
 /**************************/
 /* NAVIGATION */
@@ -561,6 +562,17 @@
   grid-template-columns: 1fr; }
 
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+.hero-text-box {
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+
+.hero-img {
+  border-radius: 2rem;
+  transition: all .2s; }
+  .hero-img:hover {
+    transform: scale(1.1); }
+
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
@@ -614,8 +626,6 @@
   .delivered-meals {
     justify-content: center;
     margin-top: 3.2rem; }
-  .logos img {
-    height: 2.4rem; }
   .step-number {
     font-size: 7.4rem; }
   .meal-content {
@@ -718,8 +728,6 @@
     padding: 0 3.2rem; }
   .hero-img {
     width: 80%; }
-  .logos img {
-    height: 1.2rem; }
   .step-img-box:nth-child(2) {
     grid-row: 1; }
   .step-img-box:nth-child(6) {
