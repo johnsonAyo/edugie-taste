@@ -1,19 +1,36 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 /**************************/
 /* HEADER */
 /**************************/
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inconsolata:wght@600&family=Indie+Flower&family=Lato:wght@300;400&family=M+PLUS+Code+Latin:wght@300&family=Yuji+Syuku&display=swap");
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: #000000;
   /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative; }
 
 .logo {
-  margin-top: 5rem;
-  width: 8%; }
+  height: 80%; }
 
 /**************************/
 /* NAVIGATION */
@@ -28,7 +45,7 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #fff8f8;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s; }
@@ -72,7 +89,7 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(12, 11, 11, 0.97);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); }
 
@@ -83,7 +100,7 @@
 /* HERO SECTION */
 /**************************/
 .section-hero {
-  background-color: #fdf2e9;
+  background-color: #0c0b0b;
   padding: 4.8rem 0 9.6rem 0; }
 
 .hero {
@@ -98,7 +115,13 @@
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 4.8rem; }
+  margin-bottom: 4.8rem;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-family: 'Yuji Syuku', serif; }
 
 .hero-img {
   width: 100%; }
@@ -290,8 +313,9 @@
 .section-testimonials {
   background-color: #fdf2e9;
   display: grid;
-  grid-template-columns: 55fr 45fr;
-  align-items: center; }
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 10rem; }
 
 .testimonials-container {
   padding: 9.6rem; }
@@ -507,7 +531,8 @@
 
 .footer-logo {
   display: block;
-  margin-bottom: 3.2rem; }
+  margin-bottom: 3.2rem;
+  width: 20%; }
 
 .social-links {
   list-style: none;
@@ -560,6 +585,35 @@
   overflow: hidden;
   transition: all 0.4s;
   grid-template-columns: 1fr; }
+
+.row {
+  display: flex;
+  justify-content: space-between; }
+
+.row.center {
+  align-items: center; }
+
+.col-1 {
+  flex: 1;
+  margin-top: 5rem; }
+
+aside {
+  margin-top: 5rem; }
+
+.col-2 {
+  flex: 2; }
+
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 5rem;
+  border-radius: 0.5rem; }
+
+.text-right {
+  text-align: right; }
+
+img.small {
+  max-height: 8rem; }
 
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 .hero-text-box {
@@ -631,7 +685,8 @@
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem; }
   .section-testimonials {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    margin: 2rem; }
   .gallery {
     grid-template-columns: repeat(6, 1fr); }
   .cta {
@@ -857,9 +912,6 @@ Medium: 11px
   box-sizing: border-box; }
 
 html {
-  /* font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
   /* Does NOT work on Safari */
@@ -869,7 +921,8 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: white;
+  background-color: #0c0b0b;
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden; }
 
@@ -913,7 +966,13 @@ body {
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
-  color: #333;
+  color: #dfd3d3;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-family: 'Yuji Syuku', serif;
   /* color: #45260a; */
   /* color: #343a40; */
   letter-spacing: -0.5px; }
@@ -1278,3 +1337,50 @@ Menu
     grid-template-columns: 1fr 1fr; }
   .photo {
     height: 150px; } }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333333%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+    .composition__photo--p1 {
+      left: 0;
+      top: -26rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1.2); } }
+    .composition__photo--p2 {
+      right: 0;
+      top: -20rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: -1rem;
+          transform: scale(1.3);
+          z-index: 100; } }
+    .composition__photo--p3 {
+      left: 20%;
+      top: -14rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 1rem;
+          left: 0;
+          transform: scale(1.1); } }
+    .composition__photo:hover {
+      outline: 1.5rem solid #dd2e2e;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }

@@ -1,6 +1,5 @@
 // @import "abstracts/functions";
-// @import "abstracts/mixins";
-// @import "abstracts/variables";
+
 
 // @import "base/animations";
 // @import "base/base";
@@ -29,8 +28,10 @@
 
 
 // @import "pages/home";x
-
+@import "variables";
+@import "mixins";
 @import "style";
 @import "queries";
 @import "general";
-@import "index"
+@import "index";
+@import "composition";

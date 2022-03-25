@@ -57,6 +57,9 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inconsolata:wght@600&family=Indie+Flower&family=Lato:wght@300;400&family=M+PLUS+Code+Latin:wght@300&family=Yuji+Syuku&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -64,10 +67,7 @@ Medium: 11px
 }
 
 html {
-  /* font-size: 10px; */
 
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
 
@@ -79,7 +79,8 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: white;
+  background-color: #0c0b0b;
 
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
@@ -137,7 +138,13 @@ body {
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
-  color: #333;
+  color: rgb(223, 211, 211);
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-family: 'Yuji Syuku', serif;
   /* color: #45260a; */
   /* color: #343a40; */
   letter-spacing: -0.5px;

@@ -4,9 +4,8 @@ function Nav() {
   return (
     <>
       <header className="header">
-        <Link to="#">
-          <img className="logo" alt="" src="img/edugielogo.jpeg" />
-        </Link>
+        <img className="logo" alt="" src="img/edugielogo.jpeg" />
+
         <nav className="main-nav">
           <ul className="main-nav-list">
             <li>
@@ -31,7 +30,7 @@ function Nav() {
             </li>
             <li>
               <a className="main-nav-link nav-cta" href="#cta">
-                Pay Us A visit
+                Light & dark
               </a>
             </li>
           </ul>

@@ -13,6 +13,7 @@ import {
 } from "react-icons/io5";
 
 import MealCategories from "../components/MealCategories";
+import About from "../components/About";
 
 function Main() {
   const categoryElement = mealCategories.map((mealCategory: any) => {
@@ -31,16 +32,14 @@ function Main() {
           <div className="hero-text-box">
             <h1 className="heading-primary">EDUGIE HOMES (TASTE RIPPER)</h1>
             <p className="hero-description">
-              Delicious Meals which ranges from different types of rice to
-              swallow and different types of proteins. Also available is a
-              variety of pepper soups
+              Our Green(rooftop) bar and kitchen will tend to the needs of your
+              belly. <br />
+              Our food menu covers breakfast, brunch lunch & dinner needs;
+              ranging from delicious soups, stews, chops, grills & a variety of
+              rice meals
             </p>
             <a href="#cta" className="btn btn--full margin-right-sm">
               Place your Orders Now
-            </a>
-
-            <a href="#how" className="btn btn--outline">
-              Learn more &darr;
             </a>
           </div>
 
@@ -56,164 +55,32 @@ function Main() {
               />
             </picture>
           </div>
-          {/* <div className="hero-img-box">
-            <picture>
-              <source srcSet="img/hero.webp" type="image/webp" />
-              <source srcSet="img/hero-min.png" type="image/png" />
 
+          <div className="col-1-of-2">
+            <div className="composition">
               <img
-                src="img/hero-min.png"
-                className="hero-img"
-                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                src="img/edugie-3.jpeg"
+                alt="Photo 1"
+                className="composition__photo composition__photo--p1"
               />
-            </picture>
-          </div> */}
-        </div>
-      </section>
-      <section className="section-featured">
-        <div className="container">
-          <h2 className="heading-featured-in">As featured in</h2>
-          <div className="logos">
-            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
-            <img
-              src="img/logos/business-insider.png"
-              alt="Business Insider logo"
-            />
-            <img
-              src="img/logos/the-new-york-times.png"
-              alt="The New York Times logo"
-            />
-            <img src="img/logos/forbes.png" alt="Forbes logo" />
-            <img src="img/logos/usa-today.png" alt="USA Today logo" />
-          </div>
-        </div>
-      </section>
-
-      <section className="section-how" id="how">
-        <div className="container">
-          <span className="subheading">How it works</span>
-          <h2 className="heading-secondary">Getting your desired meal Asap</h2>
-        </div>
-
-        <div className="container grid grid--2-cols grid--center-v">
-          <div className="step-text-box">
-            <p className="step-number">01</p>
-            <h3 className="heading-tertiary">
-              Tell us what you like (and what not)
-            </h3>
-            <p className="step-description">
-              Never again waste time thinking about what to eat! Omnifood AI
-              will create a 100% personalized weekly meal plan just for you. It
-              makes sure you get all the nutrients and vitamins you need, no
-              matter what diet you follow!
-            </p>
-          </div>
-          <div className="step-img-box">
-            <img
-              src="img/app/app-screen-1.png"
-              className="step-img"
-              alt="iPhone app
-            preferences selection screen"
-            />
+              <img
+                src="img/edugie-2.jpeg"
+                alt="Photo 2"
+                className="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/edugie-1.jpeg"
+                alt="Photo 3"
+                className="composition__photo composition__photo--p3"
+              />
+            </div>
           </div>
 
-          <div className="step-img-box">
-            <img
-              src="img/app/app-screen-2.png"
-              className="step-img"
-              alt="iPhone app
-            meal approving plan screen"
-            />
-          </div>
-          <div className="step-text-box">
-            <p className="step-number">02</p>
-            <h3 className="heading-tertiary">Approve your weekly meal plan</h3>
-            <p className="step-description">
-              Once per week, approve the meal plan generated for you by Omnifood
-              AI. You can change ingredients, swap entire meals, or even add
-              your own recipes.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-meals" id="meals">
-        <div className="container center-text">
-          <span className="subheading">Edugie Home Meals</span>
-        </div>
-
-        <div className="container grid grid--3-cols  margin-bottom-md">
-          {categoryElement}
-        </div>
-        <Orders />
-        <div className="btn-grid">
-          <button className="btn"> Checkout Now</button>
+          <About />
         </div>
       </section>
 
       <section className="section-testimonials" id="testimonials">
-        <div className="testimonials-container">
-          <span className="subheading">Testimonials</span>
-          <h2 className="heading-secondary">
-            Once you try it, you can't go back
-          </h2>
-
-          <div className="testimonials">
-            {testimonyElement}
-            <figure className="testimonial">
-              <img
-                className="testimonial-img"
-                alt="Photo of customer Dave Bryson"
-                src="img/customers/dave.jpg"
-              />
-              <blockquote className="testimonial-text">
-                Inexpensive, healthy and great-tasting meals, without even
-                having to order manually! It feels truly magical.
-              </blockquote>
-              <p className="testimonial-name">&mdash; Dave Bryson</p>
-            </figure>
-
-            <figure className="testimonial">
-              <img
-                className="testimonial-img"
-                alt="Photo of customer Ben Hadley"
-                src="img/customers/ben.jpg"
-              />
-              <blockquote className="testimonial-text">
-                The AI algorithm is crazy good, it chooses the right meals for
-                me every time. It's amazing not to worry about food anymore!
-              </blockquote>
-              <p className="testimonial-name">&mdash; Ben Hadley</p>
-            </figure>
-
-            <figure className="testimonial">
-              <img
-                className="testimonial-img"
-                alt="Photo of customer Steve Miller"
-                src="img/customers/steve.jpg"
-              />
-              <blockquote className="testimonial-text">
-                Omnifood is a life saver! I just started a company, so there's
-                no time for cooking. I couldn't live without my daily meals now!
-              </blockquote>
-              <p className="testimonial-name">&mdash; Steve Miller</p>
-            </figure>
-
-            <figure className="testimonial">
-              <img
-                className="testimonial-img"
-                alt="Photo of customer Hannah Smith"
-                src="img/customers/hannah.jpg"
-              />
-              <blockquote className="testimonial-text">
-                I got Omnifood for the whole family, and it frees up so much
-                time! Plus, everything is organic and vegan and without plastic.
-              </blockquote>
-              <p className="testimonial-name">&mdash; Hannah Smith</p>
-            </figure>
-          </div>
-        </div>
-
         <div className="gallery">
           <figure className="gallery-item">
             <img
@@ -299,6 +166,60 @@ function Main() {
             arranged food"
             />
           </figure>
+        </div>
+      </section>
+
+      <section className="section-how" id="how">
+        <div className="container">
+          <span className="subheading">How it works</span>
+          <h2 className="heading-secondary">Getting your desired meal Asap</h2>
+        </div>
+
+        <div className="container grid grid--2-cols grid--center-v">
+          <div className="step-text-box">
+            <p className="step-number">01</p>
+            <h3 className="heading-tertiary">
+              Tell us what you like (and select from our sumptouus menu of
+              foods)
+            </h3>
+            <p className="step-description">
+              Never again waste time thinking about what to eat! edufie homes is
+              prepared to serve you and prepare a meal plan just for you. All
+              you need to do is select from our menu and order your desired meal
+            </p>
+          </div>
+          <div className="step-img-box">
+            <img
+              src="img/eduge-3.jpeg"
+              className="step-img"
+              alt="iPhone app
+            preferences selection screen"
+            />
+          </div>
+
+          <div className="step-img-box">
+            <img
+              src="img/app/app-screen-2.png"
+              className="step-img"
+              alt="iPhone app
+            meal approving plan screen"
+            />
+          </div>
+          <div className="step-text-box">
+            <p className="step-number">02</p>
+            <h3 className="heading-tertiary">Confirm your orders</h3>
+            <p className="step-description">
+              After each order, a confirmation call will be placed to confirm
+              the order type, price and time of delivery of your placed order.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-meals" id="meals">
+        <Orders />
+        <div className="btn-grid">
+          <button className="btn"> Checkout Now</button>
         </div>
       </section>
 

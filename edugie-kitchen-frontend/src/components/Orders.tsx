@@ -13,18 +13,6 @@ function Orders(props: any) {
 
   const [cartItems, setCartItems] = useState<Record<string, any>[] | []>([]);
 
-  const onAdd = (product: Record<string, any>) => {
-    const exist = cartItems.find((x) => x.id === product.id);
-    if (exist) {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
-        )
-      );
-    } else {
-      setCartItems([...cartItems, { ...product, qty: 1 }]);
-    }
-  };
   const onRemove = (product: any) => {
     const exist = cartItems.find((x) => x.id === product.id);
     if (exist?.qty === 1) {
@@ -59,6 +47,19 @@ function Orders(props: any) {
     console.log({ newItems }, "****");
   };
 
+  const onAdd = (item: Record<string, any> | Object | any) => {
+    const exist = cartItems.find((x) => x.id === item.id);
+    if (exist) {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === item.id ? { ...exist, qty: exist.qty + 1 } : x
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...item, qty: 1 }]);
+    }
+  };
+
   return (
     <>
       <main>
@@ -68,7 +69,8 @@ function Orders(props: any) {
             <div className="underline"></div>
           </div>
           <Categories categories={categories} onFilter={filterItems} />
-          <Menu items={menuItems} key={menuItems._id} />
+          <Menu items={menuItems} key={menuItems} onAdd={onAdd} />
+          {console.log(menuItems[0])}
           <Basket
             cartItems={cartItems}
             onAdd={onAdd}

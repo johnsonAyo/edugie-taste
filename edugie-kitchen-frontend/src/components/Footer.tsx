@@ -11,11 +11,7 @@ function Footer() {
       <footer className="footer">
         <div className="container grid grid--footer">
           <div className="logo-col">
-            <a href="#" className="footer-logo">
-              <Link to="#">
-                <img className="logo" alt="" src="img/edugielogo.jpeg" />
-              </Link>
-            </a>
+            <img className="footer-logo" alt="" src="img/edugielogo.jpeg" />
 
             <ul className="social-links">
               <li>
