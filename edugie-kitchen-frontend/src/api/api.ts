@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const url = "http://localhost:3000/";
 const hostedUrl = "https://edugie-kitchen.herokuapp.com/";
 function FoodMenu() {
   const [isFetching, setIsFetching] = useState(false);

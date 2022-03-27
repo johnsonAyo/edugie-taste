@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { mealCategories, testimonials } from "../data/data";
 import Orders from "../components/Orders";
-import Testimonials from "./../components/Testimonies";
 
 import {
   IoFlashOutline,
@@ -12,21 +10,28 @@ import {
   IoWalletOutline,
 } from "react-icons/io5";
 
-import MealCategories from "../components/MealCategories";
 import About from "../components/About";
+import { useContext } from "react";
+import { AppContext } from "../context/app.context";
+import Navigation from "../components/Navigation";
 
 function Main() {
-  const categoryElement = mealCategories.map((mealCategory: any) => {
-    return <MealCategories {...mealCategory} />;
-  });
+  const { state } = useContext(AppContext);
 
-  const testimonyElement = testimonials.map((testimonial: any) => {
-    return <Testimonials {...testimonial} />;
-  });
+  // const darkMode = {
+  //   backgroundColor: "#0c0b0b",
+  //   color: "white",
+  // };
 
+  // const lightMode = {
+  //   backgroundColor: "#fdf2e9",
+  //   color: "black",
+  // };
   return (
-    <>
+    <div>
+      {/* <div style={state.theme === "dark" ? darkMode : lightMode}> */}
       <Nav />
+      <Navigation />
       <section className="section-hero">
         <div className="hero">
           <div className="hero-text-box">
@@ -79,7 +84,6 @@ function Main() {
           <About />
         </div>
       </section>
-
       <section className="section-testimonials" id="testimonials">
         <div className="gallery">
           <figure className="gallery-item">
@@ -168,7 +172,6 @@ function Main() {
           </figure>
         </div>
       </section>
-
       <section className="section-how" id="how">
         <div className="container">
           <span className="subheading">How it works</span>
@@ -191,7 +194,7 @@ function Main() {
           <div className="step-img-box">
             <img
               src="img/eduge-3.jpeg"
-              className="step-img"
+              className="step-card"
               alt="iPhone app
             preferences selection screen"
             />
@@ -215,14 +218,12 @@ function Main() {
           </div>
         </div>
       </section>
-
       <section className="section-meals" id="meals">
         <Orders />
         <div className="btn-grid">
           <button className="btn"> Checkout Now</button>
         </div>
       </section>
-
       <section className="section-pricing" id="pricing">
         <div className="container">
           <span className="subheading">Pricing</span>
@@ -275,10 +276,9 @@ function Main() {
           </div>
         </div>
       </section>
-
       <section className="section-cta" id="cta"></section>
       <Footer />
-    </>
+    </div>
   );
 }
 

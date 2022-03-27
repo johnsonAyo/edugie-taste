@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaCartArrowDown, FaToggleOn, FaToggleOff } from "react-icons/fa";
 
 function Nav() {
   return (
@@ -19,18 +20,18 @@ function Nav() {
               </a>
             </li>
             <li>
-              <a className="main-nav-link" href="#testimonials">
-                Testimonials
-              </a>
-            </li>
-            <li>
               <a className="main-nav-link" href="#pricing">
                 Availabe Meals
               </a>
             </li>
             <li>
-              <a className="main-nav-link nav-cta" href="#cta">
-                Light & dark
+              <a className="main-nav-link icon" href="#testimonials">
+                <FaCartArrowDown />
+              </a>
+            </li>
+            <li>
+              <a className="main-nav-link icon" href="#cta">
+                <FaToggleOn />
               </a>
             </li>
           </ul>
