@@ -17,30 +17,30 @@ function Navigation() {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to={"/public"} className="navigation__link">
+            <a className="navigation__link" href="#how">
               <span>01</span>About Edugie Kitchen
-            </Link>
+            </a>
           </li>
 
           <li className="navigation__item">
-            <Link to={"/"} className="navigation__link">
+            <a className="navigation__link" href="#how">
               <span>02</span>Meals Menu
-            </Link>
+            </a>
           </li>
           <li className="navigation__item">
-            <Link to={"/register"} className="navigation__link">
+            <a className="navigation__link" href="#how">
               <span>03</span>Available Meals
-            </Link>
+            </a>
           </li>
           <li className="navigation__item">
-            <Link to={"/login"} className="navigation__link">
+            <a className="navigation__link" href="#how">
               <span>04</span>Carts
-            </Link>
+            </a>
           </li>
           <li className="navigation__item">
-            <Link to={"/"} className="navigation__link">
+            <a className="navigation__link" href="#how">
               <span>05</span>Contact Us
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

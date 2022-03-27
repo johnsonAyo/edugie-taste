@@ -1384,7 +1384,7 @@ Menu
   background-color: #fff;
   height: 7rem;
   width: 7rem;
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 4rem;
   border-radius: 50%;
@@ -1405,7 +1405,7 @@ Menu
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
-  position: fixed;
+  position: absolute;
   top: 1.5rem;
   right: 3.5rem;
   background-image: radial-gradient(black, grey);
@@ -1422,7 +1422,7 @@ Menu
 
 .navigation__nav {
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1500;
