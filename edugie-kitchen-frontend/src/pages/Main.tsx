@@ -35,7 +35,7 @@ function Main() {
       <section className="section-hero">
         <div className="hero">
           <div className="hero-text-box">
-            <h1 className="heading-primary">EDUGIE HOMES (TASTE RIPPER)</h1>
+            <h1 className="heading-primary">EDUGIE KITCHEN (TASTE RIPPER)</h1>
             <p className="hero-description">
               Our Green(rooftop) bar and kitchen will tend to the needs of your
               belly. <br />
