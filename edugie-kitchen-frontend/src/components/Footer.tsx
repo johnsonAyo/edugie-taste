@@ -41,22 +41,24 @@ function Footer() {
             </ul>
 
             <p className="copyright">
-              Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+              Copyright &copy; 2022 by Edugie Kitchen, subsidiary of Edugie
+              Homes Inc. All rights reserved.
             </p>
           </div>
           <div className="address-col">
             <p className="footer-heading">Contact us</p>
             <address className="contacts">
               <p className="address">
-                623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                11, Evbomwan lane off etete, gra & 12 Gbadamosi avenue off nosa
+                Edugie, mtn mast, ugbor village road
               </p>
               <p>
                 <a className="footer-link" href="tel:415-201-6370">
-                  415-201-6370
+                  +234-9062-293-712
                 </a>
                 <br />
                 <a className="footer-link" href="mailto:hello@omnifood.com">
-                  hello@omnifood.com
+                  hello@edugiekitchen.com
                 </a>
               </p>
             </address>
@@ -66,12 +68,12 @@ function Footer() {
             <ul className="footer-nav">
               <li>
                 <a className="footer-link" href="#">
-                  Create account
+                  order Now
                 </a>
               </li>
               <li>
                 <a className="footer-link" href="#">
-                  Sign in
+                  Available meals
                 </a>
               </li>
               <li>
@@ -92,7 +94,7 @@ function Footer() {
             <ul className="footer-nav">
               <li>
                 <a className="footer-link" href="#">
-                  About Omnifood
+                  About edugie homes
                 </a>
               </li>
               <li>
