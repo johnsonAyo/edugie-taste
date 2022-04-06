@@ -1,4 +1,5 @@
 import React from "react";
+import Modal from "./Modal";
 
 export default function Basket(props: any) {
   const { cartItems, onAdd, onRemove } = props;
@@ -45,12 +46,7 @@ export default function Basket(props: any) {
             </div>
             <hr />
             <div className="row col-1 Checkout-btn">
-              <button
-                className="btn "
-                onClick={() => alert("Implement Checkout!")}
-              >
-                Checkout
-              </button>
+              <Modal />
             </div>
           </>
         )}

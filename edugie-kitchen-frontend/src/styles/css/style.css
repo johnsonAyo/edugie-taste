@@ -604,7 +604,6 @@ aside {
 .block {
   background-color: #e0e0e0;
   padding: 1rem;
-  margin: 5rem;
   border-radius: 0.5rem; }
 
 .text-right {
@@ -640,6 +639,9 @@ button.badge {
 .food-list {
   font-size: 2rem;
   margin: 1rem; }
+
+.ReactModal__Content {
+  z-index: 10000; }
 
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 .hero-text-box {

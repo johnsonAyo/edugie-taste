@@ -14,22 +14,11 @@ import About from "../components/About";
 import { useContext } from "react";
 import { AppContext } from "../context/app.context";
 import Navigation from "../components/Navigation";
+import Modal from "../components/Modal";
 
 function Main() {
-  const { state } = useContext(AppContext);
-
-  // const darkMode = {
-  //   backgroundColor: "#0c0b0b",
-  //   color: "white",
-  // };
-
-  // const lightMode = {
-  //   backgroundColor: "#fdf2e9",
-  //   color: "black",
-  // };
   return (
     <div>
-      {/* <div style={state.theme === "dark" ? darkMode : lightMode}> */}
       <Nav />
       <Navigation />
       <section className="section-hero">
