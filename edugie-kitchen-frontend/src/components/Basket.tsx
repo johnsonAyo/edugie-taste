@@ -6,17 +6,16 @@ export default function Basket(props: any) {
     (a: any, c: any) => a + c.qty * c.price,
     0
   );
-  const taxPrice = itemsPrice * 0.14;
-  const shippingPrice = itemsPrice > 2000 ? 0 : 20;
-  const totalPrice = itemsPrice + taxPrice + shippingPrice;
+
+  const totalPrice = itemsPrice;
   return (
     <aside className="block col-1">
-      <h2>Cart Items</h2>
+      <h2 className="text-center">Cart Items</h2>
       <div>
         {cartItems.length === 0 && <div>Cart is empty</div>}
         {cartItems.map((item: any) => (
-          <div key={item.id} className="row">
-            <div className="col-2">{item.name}</div>
+          <div key={item.id} className="row food-list ">
+            <div className="col-2">{item.title}</div>
             <div className="col-2">
               <button onClick={() => onRemove(item)} className="remove">
                 -
@@ -26,8 +25,8 @@ export default function Basket(props: any) {
               </button>
             </div>
 
-            <div className="col-2 text-right">
-              {item.qty} x ${item.price.toFixed(2)}
+            <div className="col-2 food-list text-right">
+              {item.qty} x ₦{item.price}
             </div>
           </div>
         ))}
@@ -35,32 +34,21 @@ export default function Basket(props: any) {
         {cartItems.length !== 0 && (
           <>
             <hr></hr>
-            <div className="row">
-              <div className="col-2">Items Price</div>
-              <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
-            </div>
-            <div className="row">
-              <div className="col-2">Tax Price</div>
-              <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
-            </div>
-            <div className="row">
-              <div className="col-2">Shipping Price</div>
-              <div className="col-1 text-right">
-                ${shippingPrice.toFixed(2)}
-              </div>
-            </div>
 
-            <div className="row">
-              <div className="col-2">
+            <div className="row food-list ">
+              <div className="col-1">
                 <strong>Total Price</strong>
               </div>
               <div className="col-1 text-right">
-                <strong>${totalPrice.toFixed(2)}</strong>
+                <strong>₦{totalPrice}</strong>
               </div>
             </div>
             <hr />
-            <div className="row">
-              <button onClick={() => alert("Implement Checkout!")}>
+            <div className="row col-1 Checkout-btn">
+              <button
+                className="btn "
+                onClick={() => alert("Implement Checkout!")}
+              >
                 Checkout
               </button>
             </div>

@@ -11,9 +11,8 @@ function FoodMenu() {
         setIsFetching(true);
         const res = await axios(`${hostedUrl}api/meal`);
         const mealData = res.data.data;
-        console.log(mealData, "MealData");
+
         setIsFetching(false);
-        // return mealData;
 
         setItems(mealData.data);
       } catch (err) {

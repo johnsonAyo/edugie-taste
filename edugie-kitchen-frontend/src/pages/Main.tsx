@@ -220,9 +220,6 @@ function Main() {
       </section>
       <section className="section-meals" id="meals">
         <Orders />
-        <div className="btn-grid">
-          <button className="btn"> Checkout Now</button>
-        </div>
       </section>
       <section className="section-pricing" id="pricing">
         <div className="container">

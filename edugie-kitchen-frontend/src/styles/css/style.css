@@ -613,6 +613,34 @@ aside {
 img.small {
   max-height: 8rem; }
 
+.block {
+  background-color: black; }
+
+.text-center {
+  text-align: center;
+  margin: 2rem; }
+
+.Checkout-btn {
+  justify-content: center; }
+
+button.add {
+  background-color: #96cfe4;
+  width: 3rem; }
+
+button.remove {
+  background-color: #8ff040;
+  width: 3rem; }
+
+button.badge {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem; }
+
+.food-list {
+  font-size: 2rem;
+  margin: 1rem; }
+
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 .hero-text-box {
   background-size: cover;
