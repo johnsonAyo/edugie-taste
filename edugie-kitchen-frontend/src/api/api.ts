@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const hostedUrl = "https://edugie-kitchen.herokuapp.com/";
+export const hostedUrl = "https://edugie-kitchen.herokuapp.com/";
 function FoodMenu() {
   const [isFetching, setIsFetching] = useState(false);
   const [mealsData, setItems] = useState<Record<string, any>[] | []>([]);

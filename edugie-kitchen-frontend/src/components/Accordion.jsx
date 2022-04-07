@@ -19,9 +19,7 @@ export default function SimpleAccordion() {
           <h2 className=""> 👉🏻 Click Here to Checkout 🧆</h2>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            <Form />
-          </Typography>
+          <Form />
         </AccordionDetails>
       </Accordion>
     </div>
