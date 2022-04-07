@@ -1,4 +1,14 @@
+import react, { useContext } from "react";
+import { OrderContext } from "../context/ordersContext";
 function Form() {
+  const { onRemove, onAdd, cartItems, storeUserOrders } = useContext(
+    OrderContext
+  );
+
+  const handleSubmit = () => {
+    alert("Your order has been placed");
+    storeUserOrders();
+  };
   return (
     <>
       <div className="container-reg">
@@ -58,7 +68,9 @@ function Form() {
                   required
                 />
               </div>
-              <button className="btn"> Checkout</button>
+              <button className="btn" onClick={() => handleSubmit()}>
+                Checkout
+              </button>
             </form>
           </div>
           <div

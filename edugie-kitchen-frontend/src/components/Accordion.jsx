@@ -16,7 +16,7 @@ export default function SimpleAccordion() {
           id="panel1a-header"
           className="blackie"
         >
-          <Typography>Input order Details</Typography>
+          <h2 className=""> 👉🏻 Click Here to Checkout 🧆</h2>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

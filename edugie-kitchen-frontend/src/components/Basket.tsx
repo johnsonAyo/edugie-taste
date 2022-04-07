@@ -13,9 +13,13 @@ export default function Basket(props: any) {
     <aside className="block col-1">
       <h2 className="text-center">Cart Items</h2>
       <div>
-        {cartItems.length === 0 && <div>Cart is empty</div>}
+        {cartItems.length === 0 && (
+          <h4 className="text-center">
+            Cart is currently empty, Add meal to cart by clicking on order Now
+          </h4>
+        )}
         {cartItems.map((item: any) => (
-          <div key={item.id} className="row food-list ">
+          <div key={item._id} className="row food-list ">
             <div className="col-2">{item.title}</div>
             <div className="col-2">
               <button onClick={() => onRemove(item)} className="remove">

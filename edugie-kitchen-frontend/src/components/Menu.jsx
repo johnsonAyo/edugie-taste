@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 
 import { OrderContext } from "../context/ordersContext";
 const Menu = ({ items }) => {
-  const { onAdd } = useContext(OrderContext);
+  const { onAdd, storeUserOrders } = useContext(OrderContext);
 
   return (
     <div className="section-center">
@@ -12,6 +12,7 @@ const Menu = ({ items }) => {
         const handleClick = () => {
           if (!items) return;
           onAdd(menuItem);
+          storeUserOrders([menuItem])
         };
 
         return (

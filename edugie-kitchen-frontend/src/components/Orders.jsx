@@ -9,7 +9,9 @@ function Orders(props) {
   const { mealsData, isFetching } = FoodMenu();
   const [categories, setCategories] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
-  const { onRemove, onAdd, cartItems } = useContext(OrderContext);
+  const { onRemove, onAdd, cartItems, getUserOrders } = useContext(
+    OrderContext
+  );
   // const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
@@ -47,6 +49,7 @@ function Orders(props) {
             cartItems={cartItems}
             onAdd={onAdd}
             onRemove={onRemove}
+            getUserOrders={getUserOrders}
           ></Basket>
           {console.log(cartItems)}
         </section>
