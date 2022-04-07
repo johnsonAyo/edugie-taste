@@ -5,8 +5,9 @@ function Nav() {
   return (
     <>
       <header className="header">
-        <img className="logo" alt="" src="img/edugielogo.jpeg" />
-
+        <Link className="logo" to={"/"}>
+          <img className="logo" alt="" src="img/edugielogo.jpeg" />
+        </Link>
         <nav className="main-nav">
           <ul className="main-nav-list">
             <li>
@@ -25,9 +26,9 @@ function Nav() {
               </a>
             </li>
             <li>
-              <a className="main-nav-link icon" href="#testimonials">
+              <Link className="main-nav-link icon" to={"/checkout"}>
                 <FaCartArrowDown />
-              </a>
+              </Link>
             </li>
             <li>
               <a className="main-nav-link icon" href="#cta">
