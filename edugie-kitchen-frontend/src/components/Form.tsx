@@ -1,8 +1,7 @@
 function Form() {
   return (
     <>
-      {" "}
-      <div className="container">
+      <div className="container-reg">
         <div className="cta">
           <div className="cta-text-box">
             <h2 className="heading-secondary">
@@ -59,8 +58,7 @@ function Form() {
                   required
                 />
               </div>
-              {/* <!-- <input type="checkbox" />
-        <input type="number" /> --> */}
+              <button className="btn"> Checkout</button>
             </form>
           </div>
           <div

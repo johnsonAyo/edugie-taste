@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./Modal";
+import SimpleAccordion from "./Accordion";
 
 export default function Basket(props: any) {
   const { cartItems, onAdd, onRemove } = props;
@@ -46,7 +46,8 @@ export default function Basket(props: any) {
             </div>
             <hr />
             <div className="row col-1 Checkout-btn">
-              <Modal />
+              {/* <Modal /> */}
+              <SimpleAccordion />
             </div>
           </>
         )}

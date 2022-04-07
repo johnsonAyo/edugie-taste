@@ -11,10 +11,8 @@ import {
 } from "react-icons/io5";
 
 import About from "../components/About";
-import { useContext } from "react";
-import { AppContext } from "../context/app.context";
 import Navigation from "../components/Navigation";
-import Modal from "../components/Modal";
+
 
 function Main() {
   return (

@@ -460,12 +460,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  background-image: linear-gradient(to right bottom, #0e0d0c, #131212);
   overflow: hidden; }
 
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a; }
+  color: #f8f8f8; }
 
 .cta .heading-secondary {
   /* color: #45260a; */
@@ -478,8 +478,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-bottom: 4.8rem; }
 
 .cta-img-box {
-  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url("/public/img/eating.jpg");
-  background-size: cover;
+  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url("/public/img/eduge-3.jpeg");
   background-position: center; }
 
 .cta-form {
@@ -628,7 +627,8 @@ button.add {
 
 button.remove {
   background-color: #8ff040;
-  width: 3rem; }
+  width: 3rem;
+  border: none; }
 
 button.badge {
   background-color: #f04040;
@@ -639,9 +639,6 @@ button.badge {
 .food-list {
   font-size: 2rem;
   margin: 1rem; }
-
-.ReactModal__Content {
-  z-index: 10000; }
 
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 .hero-text-box {
@@ -962,6 +959,10 @@ body {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto; }
+
+.container-reg {
+  /* 1140px */
+  margin: 1rem; }
 
 .grid {
   display: grid;
