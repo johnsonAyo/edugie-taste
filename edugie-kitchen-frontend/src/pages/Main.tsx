@@ -13,12 +13,11 @@ import {
 import About from "../components/About";
 import Navigation from "../components/Navigation";
 
-
 function Main() {
   return (
     <div>
       <Nav />
-      <Navigation />
+      {/* <Navigation /> */}
       <section className="section-hero">
         <div className="hero">
           <div className="hero-text-box">
@@ -162,16 +161,16 @@ function Main() {
       <section className="section-how" id="how">
         <div className="container">
           <span className="subheading">How it works</span>
-          <h2 className="heading-secondary">Getting your desired meal Asap</h2>
+          <h5 className="heading-tertiary">Getting your desired meal Asap</h5>
         </div>
 
         <div className="container grid grid--2-cols grid--center-v">
           <div className="step-text-box">
             <p className="step-number">01</p>
-            <h3 className="heading-tertiary">
+            <h5 className="heading-tertiary">
               Tell us what you like (and select from our sumptouus menu of
               foods)
-            </h3>
+            </h5>
             <p className="step-description">
               Never again waste time thinking about what to eat! edufie homes is
               prepared to serve you and prepare a meal plan just for you. All
@@ -197,7 +196,7 @@ function Main() {
           </div>
           <div className="step-text-box">
             <p className="step-number">02</p>
-            <h3 className="heading-tertiary">Confirm your orders</h3>
+            <h5 className="heading-tertiary">Confirm your orders</h5>
             <p className="step-description">
               After each order, a confirmation call will be placed to confirm
               the order type, price and time of delivery of your placed order.
@@ -210,10 +209,9 @@ function Main() {
       </section>
       <section className="section-pricing" id="pricing">
         <div className="container">
-          <span className="subheading">Pricing</span>
-          <h2 className="heading-secondary">
+          <h5 className="heading-secondary">
             Eating well without breaking the bank
-          </h2>
+          </h5>
         </div>
 
         <div className="container grid grid--4-cols">

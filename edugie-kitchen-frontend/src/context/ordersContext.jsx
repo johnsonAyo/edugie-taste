@@ -41,7 +41,7 @@ const OrderProvider = ({ children }) => {
 
   const getUserOrders = () => {
     let data = localStorage.getItem("ORDERS");
-    return JSON.parse(data);
+    return data;
   };
 
   return (

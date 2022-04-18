@@ -1,9 +1,9 @@
-import react, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { OrderContext } from "../context/ordersContext";
 import { hostedUrl } from "../api/api";
 import axios from "axios";
 function Form() {
-  const { onRemove, onAdd, cartItems, storeUserOrders } = useContext(
+  const { storeUserOrders, getUserOrders, cartItems } = useContext(
     OrderContext
   );
 
@@ -24,16 +24,24 @@ function Form() {
     });
   }
 
+  const totalAmount = cartItems.reduce(
+    (a: number, c: any) => a + c.qty * c.price,
+    0
+  );
+
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-    console.log(formData);
     alert("Your order has been placed");
-    storeUserOrders();
+    let order = [formData, cartItems, { "Total Amount": totalAmount }];
+    storeUserOrders(order);
+
+    console.log(getUserOrders());
+
     try {
       const { data } = await axios({
-        url: hostedUrl,
+        url: `${hostedUrl}/api/orders`,
         method: "POST",
-        data: formData,
+        data: order,
       });
       setFormData({ fullName: "", phone: "", email: "", suite: "" });
       alert("successfully orderd your meal");

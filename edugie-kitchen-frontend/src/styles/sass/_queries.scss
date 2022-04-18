@@ -119,7 +119,7 @@
 
   .section-testimonials {
     grid-template-columns: 1fr;
-    margin:2rem
+    margin: 2rem
   }
 
   .gallery {
@@ -146,6 +146,8 @@
   }
 
   .main-nav {
+
+
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(10px);
@@ -193,11 +195,13 @@
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
+    font-family: 'Beau Rivage', cursive;
   }
 
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+    font-family: 'Beau Rivage', cursive;
   }
 }
 
