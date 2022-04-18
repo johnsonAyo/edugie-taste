@@ -11,7 +11,11 @@ function Footer() {
       <footer className="footer">
         <div className="container grid grid--footer">
           <div className="logo-col">
-            <img className="footer-logo" alt="" src="img/edugielogo.jpeg" />
+            <img
+              className="footer-logo"
+              alt=""
+              src="https://edugieinfo.com/asset/images/icon/logo.png"
+            />
 
             <ul className="social-links">
               <li>
@@ -84,53 +88,6 @@ function Footer() {
               <li>
                 <a className="footer-link" href="#">
                   Android app
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav className="nav-col">
-            <p className="footer-heading">Company</p>
-            <ul className="footer-nav">
-              <li>
-                <a className="footer-link" href="#">
-                  About edugie homes
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  For Business
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  Cooking partners
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  Careers
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav className="nav-col">
-            <p className="footer-heading">Resources</p>
-            <ul className="footer-nav">
-              <li>
-                <a className="footer-link" href="#">
-                  Recipe directory{" "}
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  Help center
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  Privacy & terms
                 </a>
               </li>
             </ul>

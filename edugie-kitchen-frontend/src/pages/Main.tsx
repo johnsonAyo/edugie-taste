@@ -2,6 +2,7 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Orders from "../components/Orders";
+import Navbar from "./../components/Navbar/Navbar";
 
 import {
   IoFlashOutline,
@@ -11,12 +12,11 @@ import {
 } from "react-icons/io5";
 
 import About from "../components/About";
-import Navigation from "../components/Navigation";
 
 function Main() {
   return (
     <div>
-      <Nav />
+      <Navbar />
       {/* <Navigation /> */}
       <section className="section-hero">
         <div className="hero">
