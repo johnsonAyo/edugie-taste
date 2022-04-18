@@ -6,7 +6,11 @@ function Nav() {
     <>
       <header className="header">
         <Link className="logo" to={"/"}>
-          <img className="logo" alt="" src="img/edugielogo.jpeg" />
+          <img
+            className="logo"
+            alt=""
+            src="https://edugieinfo.com/asset/images/icon/logo.png"
+          />
         </Link>
         <nav className="main-nav">
           <ul className="main-nav-list">

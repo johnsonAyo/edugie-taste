@@ -160,8 +160,7 @@ function Main() {
       </section>
       <section className="section-how" id="how">
         <div className="container">
-          <span className="subheading">How it works</span>
-          <h5 className="heading-tertiary">Getting your desired meal Asap</h5>
+          <h5 className="heading-tertiary">Getting your desired meal asap</h5>
         </div>
 
         <div className="container grid grid--2-cols grid--center-v">
