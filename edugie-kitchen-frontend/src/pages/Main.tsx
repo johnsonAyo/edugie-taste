@@ -31,7 +31,7 @@ function Main() {
               rice meals
             </p>
             <a href="#cta" className="btn btn--full margin-right-sm">
-              Place your Orders Now
+              Place your orders now
             </a>
           </div>
 

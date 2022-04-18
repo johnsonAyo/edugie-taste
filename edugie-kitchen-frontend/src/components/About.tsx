@@ -2,22 +2,22 @@ function About() {
   return (
     <section className="section-about">
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">Deliciousness at your request</h2>
+        <h5 className="heading-tertiary">Deliciousness at your request</h5>
       </div>
       <div className="row">
         <div className="">
-          <h3 className="heading-tertiary u-margin-bottom-small">
+          <p className="heading-text">
             One taste and you'd surely be wanting more of our mouthwatering
             meals Drinks are Available at affordable rates in a serene
             environments
-          </h3>
+          </p>
 
-          <h3 className="heading-tertiary u-margin-bottom-small">
+          <p className="heading-text">
             Drink & Dine with the starts at our Green(rooftop) bar... shots,
             liquor. soda's and more for your relaxation and thirst
-          </h3>
+          </p>
 
-          <a href="#" className="btn-text">
+          <a href="#" className="btn btn--full margin-right-sm">
             {" "}
             Satisfy your taste buds today!!! &rarr;
           </a>

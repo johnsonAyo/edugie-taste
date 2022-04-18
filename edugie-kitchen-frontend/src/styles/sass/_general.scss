@@ -151,6 +151,7 @@ body {
 }
 
 .heading-primary {
+  font-family: 'Source Code Pro', monospace;
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
@@ -166,6 +167,14 @@ body {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+}
+
+.heading-text {
+  font-size: 2.5rem;
+  color: white;
+  line-height: 2;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .subheading {
@@ -308,17 +317,35 @@ strong {
 
 
 @media screen and (max-width: 900px) {
+
+
+
   .container {
     /* 1140px */
     max-width: 120rem;
     padding: 0 3.2rem;
     margin: 2rem;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
   }
 
 }
 
 @media screen and (max-width: 600px) {
+
+  html {
+    font-size: 0.6rem;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .heading-text {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+
   .container {
     /* 1140px */
     max-width: 120rem;

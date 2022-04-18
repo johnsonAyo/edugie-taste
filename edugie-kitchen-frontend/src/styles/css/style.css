@@ -116,9 +116,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   align-items: center; }
 
 .hero-description {
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 1.6;
-  margin-bottom: 4.8rem; }
+  margin-bottom: 4.8rem;
+  font-family: 'Square Peg', cursive; }
 
 .hero-img {
   width: 100%; }
@@ -154,8 +155,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 /* FEATURED IN SECTION */
 /**************************/
 .button {
-  background-color: #b4d482;
-  color: black;
+  background-color: #cf711f;
+  color: white;
   border-radius: .2rem;
   margin-top: 2rem;
   padding: 1rem;
@@ -616,17 +617,18 @@ img.small {
 
 .text-center {
   text-align: center;
+  justify-self: center;
   margin: 2rem; }
 
 .Checkout-btn {
   justify-content: center; }
 
 button.add {
-  background-color: #96cfe4;
+  background-color: #8ff040;
   width: 3rem; }
 
 button.remove {
-  background-color: #8ff040;
+  background-color: #e67e22;
   width: 3rem;
   border: none; }
 
@@ -1001,6 +1003,7 @@ body {
   letter-spacing: -0.5px; }
 
 .heading-primary {
+  font-family: 'Source Code Pro', monospace;
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem; }
@@ -1014,6 +1017,12 @@ body {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem; }
+
+.heading-text {
+  font-size: 2.5rem;
+  color: white;
+  line-height: 2;
+  font-family: 'Poppins', sans-serif; }
 
 .subheading {
   display: block;
@@ -1136,6 +1145,13 @@ strong {
     grid-template-columns: 1fr 1fr; } }
 
 @media screen and (max-width: 600px) {
+  html {
+    font-size: 0.6rem; }
+  .heading-primary {
+    font-size: 4rem; }
+  .heading-text {
+    font-size: 2rem;
+    line-height: 1.5; }
   .container {
     /* 1140px */
     max-width: 120rem;
@@ -1288,10 +1304,10 @@ Menu
 .filter-btn {
   background: transparent;
   border-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   padding: 0.375rem 0.75rem;
   color: var(--clr-gold);
   cursor: pointer;
@@ -1401,7 +1417,6 @@ Menu
           left: 0;
           transform: scale(1.1); } }
     .composition__photo:hover {
-      outline: 1.5rem solid #dd2e2e;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
