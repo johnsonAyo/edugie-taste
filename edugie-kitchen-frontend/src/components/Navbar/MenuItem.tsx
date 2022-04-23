@@ -1,3 +1,5 @@
+import { IoIosBasket } from "react-icons/io";
+
 export const MenuItems = [
   {
     title: "About Edugie kitchen",
@@ -6,12 +8,17 @@ export const MenuItems = [
   },
   {
     title: "Meals Menu",
-    url: "#",
+    url: "#meals",
     cName: "nav-links",
   },
   {
     title: "Availabe Meals",
-    url: "#",
+    url: "#meals",
+    cName: "nav-links",
+  },
+  {
+    title: <IoIosBasket />,
+    url: "#checkout",
     cName: "nav-links",
   },
 ];

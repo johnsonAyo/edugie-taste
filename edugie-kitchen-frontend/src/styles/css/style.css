@@ -559,6 +559,10 @@ img.small {
   justify-self: center;
   margin: 2rem; }
 
+.center {
+  text-align: center;
+  justify-self: center; }
+
 .Checkout-btn {
   justify-content: center; }
 
