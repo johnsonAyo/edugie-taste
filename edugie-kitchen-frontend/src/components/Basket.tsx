@@ -13,9 +13,9 @@ export default function Basket(props: any) {
       <h2 className="text-center">Cart Items</h2>
       <div>
         {cartItems.length === 0 && (
-          <h4 className="text-center">
+          <h3 className="text-center">
             Cart is currently empty, Add meal to cart by clicking on order Now
-          </h4>
+          </h3>
         )}
         {cartItems.map((item: any) => (
           <div key={item._id} className="row food-list ">

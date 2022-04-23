@@ -11,13 +11,11 @@ function Orders(props) {
   const [menuItems, setMenuItems] = useState([]);
   const { onRemove, onAdd, cartItems, getUserOrders } =
     useContext(OrderContext);
-  // const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     if (mealsData.length) {
       setMenuItems(mealsData);
       const allCategories = [
-        "all",
         ...new Set(mealsData.map((item) => item.category)),
       ];
       setCategories(allCategories);
@@ -25,10 +23,6 @@ function Orders(props) {
   }, [mealsData]);
 
   const filterItems = (category) => {
-    if (category === "all") {
-      setMenuItems(mealsData);
-      return;
-    }
     const newItems = mealsData.filter((item) => item.category === category);
     setMenuItems(newItems);
   };

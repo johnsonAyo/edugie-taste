@@ -1036,6 +1036,8 @@ strong {
   .heading-text {
     font-size: 2rem;
     line-height: 1.5; }
+  .footer {
+    padding: 5rem 0; }
   .container {
     /* 1140px */
     max-width: 120rem;
