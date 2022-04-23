@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: "About Edugie kitchen",
-    url: "#",
+    url: "#about",
     cName: "nav-links",
   },
   {

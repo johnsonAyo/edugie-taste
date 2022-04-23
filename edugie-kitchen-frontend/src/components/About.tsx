@@ -18,8 +18,8 @@ function About() {
             liquor. soda's and more for your relaxation and thirst
           </p>
 
-          <a href="#" className="btn btn--full margin-right-sm">
-            Satisfy your taste buds today!!! &rarr;
+          <a href="#meals" className="btn btn--full margin-right-sm">
+            Satisfy your taste buds today! &rarr;
           </a>
         </div>
       </div>

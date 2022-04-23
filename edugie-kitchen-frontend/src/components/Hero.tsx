@@ -3,7 +3,7 @@ import About from "../components/About";
 
 const Hero = () => {
   return (
-    <section className="section-hero">
+    <section className="section-hero" id="about">
       <div className="hero">
         <div className="hero-text-box">
           <h1 className="heading-primary">EDUGIE KITCHEN (TASTE RIPPER)</h1>
@@ -13,7 +13,7 @@ const Hero = () => {
             Our food menu covers breakfast, brunch lunch & dinner needs; ranging
             from delicious soups, stews, chops, grills & a variety of rice meals
           </p>
-          <a href="#cta" className="btn btn--full margin-right-sm">
+          <a href="#meals" className="btn btn--full margin-right-sm">
             Place your orders now
           </a>
         </div>

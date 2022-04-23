@@ -9,7 +9,7 @@ export default function Basket(props: any) {
 
   const totalPrice = itemsPrice;
   return (
-    <aside className="block col-1">
+    <aside className="block col-1" id="checkout">
       <h2 className="text-center">Cart Items</h2>
       <div>
         {cartItems.length === 0 && (

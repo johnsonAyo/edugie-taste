@@ -1,49 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {
-  IoFlameOutline,
-  IoRestaurantOutline,
-  IoStarOutline,
-} from "react-icons/io5";
-import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <>
       <footer className="footer">
         <div className="container grid grid--footer">
           <div className="logo-col">
-            <img
-              className="footer-logo"
-              alt=""
-              src="https://edugieinfo.com/asset/images/icon/logo.png"
-            />
-
-            <ul className="social-links">
-              <li>
-                <a className="footer-link" href="#">
-                  <IoFlameOutline
-                    className="social-icon"
-                    name="logo-instagram"
-                  ></IoFlameOutline>
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  <IoRestaurantOutline
-                    className="social-icon"
-                    name="logo-facebook"
-                  ></IoRestaurantOutline>
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  <IoStarOutline
-                    className="social-icon"
-                    name="logo-twitter"
-                  ></IoStarOutline>
-                </a>
-              </li>
-            </ul>
-
+            <p className="footer-heading">Copyright &copy; </p>
             <p className="copyright">
               Copyright &copy; 2022 by Edugie Kitchen, subsidiary of Edugie
               Homes Inc. All rights reserved.
@@ -54,7 +17,8 @@ function Footer() {
             <address className="contacts">
               <p className="address">
                 11, Evbomwan lane off etete, gra & 12 Gbadamosi avenue off nosa
-                Edugie, mtn mast, ugbor village road
+                Edugie, mtn mast ugbor village road, Benin city, Edo state.
+                Nigeria
               </p>
               <p>
                 <a className="footer-link" href="tel:415-201-6370">
@@ -67,31 +31,26 @@ function Footer() {
               </p>
             </address>
           </div>
-          <nav className="nav-col">
-            <p className="footer-heading">Account</p>
+          <div className="nav-col">
+            <p className="footer-heading">Links</p>
             <ul className="footer-nav">
               <li>
-                <a className="footer-link" href="#">
-                  order Now
+                <a className="footer-link" href="#meals">
+                  Order Now
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
+                <a className="footer-link" href="#meals">
                   Available meals
                 </a>
               </li>
               <li>
-                <a className="footer-link" href="#">
-                  iOS app
-                </a>
-              </li>
-              <li>
-                <a className="footer-link" href="#">
-                  Android app
+                <a className="footer-link" href="#checkout">
+                  Checkout
                 </a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </footer>
     </>

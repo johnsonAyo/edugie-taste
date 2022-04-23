@@ -222,7 +222,6 @@ body {
 .btn--full:hover,
 .btn--full:active {
   background-color: $color-primary;
-  color: rgb(31, 30, 30);
 }
 
 .btn--outline:link,
@@ -294,7 +293,7 @@ body {
   outline: none;
   /* outline: 4px dotted #e67e22; */
   /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(254, 250, 250, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */

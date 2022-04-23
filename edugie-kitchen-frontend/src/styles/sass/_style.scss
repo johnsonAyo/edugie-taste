@@ -41,10 +41,11 @@
 
 
 .hero-description {
-  font-size: 4rem;
+  font-size: 2.2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
-  font-family: 'Square Peg', cursive;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
 }
 
 .hero-img {
@@ -579,10 +580,10 @@
 }
 
 .copyright {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
-  color: #767676;
-  margin-top: auto;
+  color: #ffffff;
+  margin: auto;
 }
 
 .footer-heading {
@@ -599,6 +600,7 @@
 
 .address {
   margin-bottom: 2.4rem;
+  color: white;
 }
 
 .footer-nav {
