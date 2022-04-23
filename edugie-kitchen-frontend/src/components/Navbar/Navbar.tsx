@@ -33,7 +33,6 @@ const Navbar = () => {
           );
         })}
       </ul>
-      {/* <Button> SignUp </Button> */}
     </nav>
   );
 };

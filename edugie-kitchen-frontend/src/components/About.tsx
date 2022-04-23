@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 function About() {
   return (
     <section className="section-about">
@@ -18,11 +19,10 @@ function About() {
           </p>
 
           <a href="#" className="btn btn--full margin-right-sm">
-            {" "}
             Satisfy your taste buds today!!! &rarr;
           </a>
         </div>
-      </div>{" "}
+      </div>
     </section>
   );
 }

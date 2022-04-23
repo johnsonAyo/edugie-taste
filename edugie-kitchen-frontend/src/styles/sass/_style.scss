@@ -552,7 +552,8 @@
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
 
 .logo-col {

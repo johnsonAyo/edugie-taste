@@ -1,4 +1,3 @@
-import React from "react";
 import SimpleAccordion from "./Accordion";
 
 export default function Basket(props: any) {
@@ -50,7 +49,6 @@ export default function Basket(props: any) {
             </div>
             <hr />
             <div className="row col-1 Checkout-btn">
-              {/* <Modal /> */}
               <SimpleAccordion />
             </div>
           </>

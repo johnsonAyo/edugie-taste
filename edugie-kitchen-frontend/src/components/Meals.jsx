@@ -9,9 +9,8 @@ function Orders(props) {
   const { mealsData, isFetching } = FoodMenu();
   const [categories, setCategories] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
-  const { onRemove, onAdd, cartItems, getUserOrders } = useContext(
-    OrderContext
-  );
+  const { onRemove, onAdd, cartItems, getUserOrders } =
+    useContext(OrderContext);
   // const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
@@ -35,7 +34,7 @@ function Orders(props) {
   };
 
   return (
-    <>
+    <section className="section-meals" id="meals">
       <main>
         <section className="menu section">
           <div className="title">
@@ -54,7 +53,7 @@ function Orders(props) {
           {console.log(cartItems)}
         </section>
       </main>
-    </>
+    </section>
   );
 }
 
