@@ -18,10 +18,6 @@ const OrderProvider = ({ children }) => {
     }
   };
 
-  // export const getUserToken = () => {
-  //   let data = localStorage.getItem("tweeter");
-  //   console.log(data);
-
   const onAdd = (item) => {
     const exist = cartItems.find((x) => x._id === item._id);
     if (exist) {
