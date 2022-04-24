@@ -44,10 +44,10 @@ function Form() {
       });
       setFormData({ fullName: "", phone: "", email: "", suite: "" });
       alert("successfully orderd your meal");
-      await axios.post(`${hostedUrl}/send_mail`, {
+      await axios.post(`${hostedUrl}send_mail`, {
         order,
       });
-      window.location.reload();
+      // window.location.reload();
       console.log(data);
     } catch (err) {
       console.log(err);
