@@ -3,9 +3,8 @@ import { OrderContext } from "../context/ordersContext";
 import { hostedUrl } from "../api/api";
 import axios from "axios";
 function Form() {
-  const { storeUserOrders, getUserOrders, cartItems } = useContext(
-    OrderContext
-  );
+  const { storeUserOrders, getUserOrders, cartItems } =
+    useContext(OrderContext);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -32,23 +31,26 @@ function Form() {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     alert("Your order has been placed");
-    let order = [formData, cartItems, { "Total Amount": totalAmount }];
+    let order = { formData, cartItems, totalAmount };
     storeUserOrders(order);
 
     console.log(getUserOrders());
 
     try {
       const { data } = await axios({
-        url: `${hostedUrl}/api/orders`,
+        url: `${hostedUrl}api/orders`,
         method: "POST",
-        data: order,
+        data: { body: order },
       });
       setFormData({ fullName: "", phone: "", email: "", suite: "" });
       alert("successfully orderd your meal");
+      await axios.post(`${hostedUrl}/send_mail`, {
+        order,
+      });
       window.location.reload();
       console.log(data);
     } catch (err) {
-      console.log("error occured");
+      console.log(err);
     }
   };
 
