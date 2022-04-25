@@ -554,11 +554,6 @@ img.small {
 .block {
   background-color: black; }
 
-.text-center {
-  text-align: center;
-  justify-self: center;
-  margin: 2rem; }
-
 .center {
   text-align: center;
   justify-self: center; }
@@ -587,6 +582,15 @@ button.badge {
 
 nav {
   font-family: 'Beau Rivage', cursive; }
+
+.cart-header {
+  font-size: 3rem;
+  font-family: 'Roboto Mono', monospace;
+  margin: 2rem; }
+
+.cart-details {
+  font-size: 2rem;
+  margin: 2rem; }
 
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 .hero-text-box {
@@ -816,6 +820,9 @@ body {
   /* 1140px */
   margin: 1rem; }
 
+.text-center-big {
+  text-align: center; }
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -1005,9 +1012,20 @@ strong {
     font-size: 2.5rem; }
   .heading-text {
     font-size: 2rem;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-align: center; }
   .footer {
     padding: 5rem 0; }
+  .section-about {
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .about {
+    justify-content: center; }
+  .text-center {
+    text-align: center;
+    justify-self: center;
+    justify-content: center; }
   .container {
     /* 1140px */
     max-width: 120rem;

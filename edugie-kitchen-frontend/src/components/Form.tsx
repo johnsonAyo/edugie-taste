@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { OrderContext } from "../context/ordersContext";
-import { hostedUrl,localUrl } from "../api/api";
+import { hostedUrl, localUrl } from "../api/api";
 import axios from "axios";
 function Form() {
   const { storeUserOrders, getUserOrders, cartItems } =
@@ -44,7 +44,10 @@ function Form() {
       });
       setFormData({ fullName: "", phone: "", email: "", suite: "" });
       alert("successfully orderd your meal");
-      await axios.post(`${hostedUrl}send_mail`, {
+      await axios.post(`${hostedUrl}send_user`, {
+        order,
+      });
+      await axios.post(`${hostedUrl}send_kitchen`, {
         order,
       });
       // window.location.reload();
@@ -97,13 +100,19 @@ function Form() {
 
               <div>
                 <label htmlFor="suite">Suite Number</label>
-                <select id="suite" name="suite" required>
+                <select
+                  id="suite"
+                  value={formData.suite}
+                  onChange={orderFood}
+                  name="suite"
+                  required
+                >
                   <option value="">Please choose one option:</option>
-                  <option value="friends">100</option>
-                  <option value="youtube">101</option>
-                  <option value="podcast">102</option>
-                  <option value="ad">103</option>
-                  <option value="others">104</option>
+                  <option value="100">100</option>
+                  <option value="101">101</option>
+                  <option value="102">102</option>
+                  <option value="103">103</option>
+                  <option value="104">104</option>
                   value={formData.suite}
                 </select>
               </div>

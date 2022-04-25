@@ -13,7 +13,7 @@ const Hero = () => {
             Our food menu covers breakfast, brunch lunch & dinner needs; ranging
             from delicious soups, stews, chops, grills & a variety of rice meals
           </p>
-          <a href="#meals" className="btn btn--full margin-right-sm">
+          <a href="#meals" className="btn btn--full">
             Place your orders now
           </a>
         </div>

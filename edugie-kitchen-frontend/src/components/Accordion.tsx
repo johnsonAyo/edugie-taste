@@ -15,7 +15,7 @@ export default function SimpleAccordion() {
           id="panel1a-header"
           className="blackie"
         >
-          <h2 className=""> 👉🏻 Click Here to Checkout 🧆</h2>
+          <h2 className=""> 👉🏻 Click Here to Checkout</h2>
         </AccordionSummary>
         <AccordionDetails>
           <Form />

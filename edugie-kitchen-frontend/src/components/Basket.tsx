@@ -10,12 +10,12 @@ export default function Basket(props: any) {
   const totalPrice = itemsPrice;
   return (
     <aside className="block col-1" id="checkout">
-      <h2 className="text-center">Cart Items</h2>
+      <div className="text-center-big cart-header ">Cart Items</div>
       <div>
         {cartItems.length === 0 && (
-          <h3 className="text-center">
-            Cart is currently empty, Add meal to cart by clicking on order Now
-          </h3>
+          <div className="text-center-big cart-details   ">
+            Cart is currently empty, Add meal to cart by clicking on order now
+          </div>
         )}
         {cartItems.map((item: any) => (
           <div key={item._id} className="row food-list ">

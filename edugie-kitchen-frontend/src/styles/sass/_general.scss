@@ -103,6 +103,9 @@ body {
   margin: 1rem
 }
 
+.text-center-big{
+  text-align: center;
+}
 
 .grid {
   display: grid;
@@ -351,11 +354,28 @@ strong {
   .heading-text {
     font-size: 2rem;
     line-height: 1.5;
+    text-align: center;
   }
 
   .footer {
     padding: 5rem 0;
   }
+
+  .section-about{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about{
+    justify-content: center;
+  }
+
+  .text-center {
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+  }
+  
 
 
   .container {

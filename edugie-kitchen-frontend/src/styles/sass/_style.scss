@@ -672,11 +672,6 @@ img.small {
   background-color: black;
 }
 
-.text-center {
-  text-align: center;
-  justify-self: center;
-  margin: 2rem;
-}
 
 .center {
   text-align: center;
@@ -713,6 +708,16 @@ button.badge {
 
 nav {
   font-family: 'Beau Rivage', cursive;
+}
+
+.cart-header {
+  font-size: 3rem;
+  font-family: 'Roboto Mono', monospace;
+  margin: 2rem
+}
 
 
+.cart-details {
+  font-size: 2rem;
+  margin: 2rem
 }
