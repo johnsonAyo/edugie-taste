@@ -24,6 +24,7 @@
     "react-icons": "^4.3.1",
     "react-modal": "^3.14.4",
     "react-router-dom": "^6.2.2",
+    "react-toastify": "^8.2.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
@@ -58,7 +59,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3000/",
+  "proxy": "https://eduge-admin-backend.herokuapp.com/",
   "devDependencies": {
     "@types/react": "^17.0.41",
     "@types/react-dom": "^17.0.11",
