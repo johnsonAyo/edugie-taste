@@ -2,8 +2,9 @@ import { useContext, useState } from "react";
 import { OrderContext } from "../context/ordersContext";
 import { hostedUrl, localUrl } from "../api/api";
 import axios from "axios";
+import Swal from "sweetalert2";
 function Form() {
-  const { storeUserOrders, cartItems } = useContext(OrderContext);
+  const { storeUserOrders, cartItems, setCartItems } = useContext(OrderContext);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -29,21 +30,27 @@ function Form() {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-    alert("Your order has been placed");
     let order = { formData, cartItems, totalAmount };
     storeUserOrders(order);
-
+    Swal.fire({
+      icon: "success",
+      title: "Your order has been placed successful",
+      text: "You will recieve a mail containing your order details",
+      confirmButtonText: "close",
+      background: "black",
+      color: "white",
+    });
     try {
       const { data } = await axios({
         url: `${hostedUrl}api/orders`,
         method: "POST",
         data: { body: order },
       });
-      setFormData({ fullName: "", phone: "", email: "", suite: "" });
-      alert("successfully orderd your meal");
       await axios.post(`${hostedUrl}send_mail`, {
         order,
       });
+      setFormData({ fullName: "", phone: "", email: "", suite: "" });
+      setCartItems([]);
       window.location.reload();
       console.log(data);
     } catch (err) {

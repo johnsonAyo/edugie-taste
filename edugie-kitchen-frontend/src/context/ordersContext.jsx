@@ -42,7 +42,14 @@ const OrderProvider = ({ children }) => {
 
   return (
     <OrderContext.Provider
-      value={{ onAdd, onRemove, cartItems, storeUserOrders, getUserOrders }}
+      value={{
+        onAdd,
+        onRemove,
+        cartItems,
+        setCartItems,
+        storeUserOrders,
+        getUserOrders,
+      }}
     >
       {children}
     </OrderContext.Provider>
