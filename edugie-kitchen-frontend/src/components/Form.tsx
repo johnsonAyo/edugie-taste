@@ -3,8 +3,7 @@ import { OrderContext } from "../context/ordersContext";
 import { hostedUrl, localUrl } from "../api/api";
 import axios from "axios";
 function Form() {
-  const { storeUserOrders, getUserOrders, cartItems } =
-    useContext(OrderContext);
+  const { storeUserOrders, cartItems } = useContext(OrderContext);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -34,8 +33,6 @@ function Form() {
     let order = { formData, cartItems, totalAmount };
     storeUserOrders(order);
 
-    // console.log(getUserOrders());
-
     try {
       const { data } = await axios({
         url: `${hostedUrl}api/orders`,
@@ -44,13 +41,10 @@ function Form() {
       });
       setFormData({ fullName: "", phone: "", email: "", suite: "" });
       alert("successfully orderd your meal");
-      await axios.post(`${hostedUrl}send_user`, {
+      await axios.post(`${hostedUrl}send_mail`, {
         order,
       });
-      await axios.post(`${hostedUrl}send_kitchen`, {
-        order,
-      });
-      // window.location.reload();
+      window.location.reload();
       console.log(data);
     } catch (err) {
       console.log(err);
