@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Swal from "sweetalert2";
 
 import { OrderContext } from "../context/ordersContext";
 const Menu = ({ items }: { items: any }) => {
@@ -18,6 +19,15 @@ const Menu = ({ items }: { items: any }) => {
 
           const handleClick = () => {
             if (!items) return;
+            Swal.fire({
+              icon: "success",
+              title: "Added to Cart !",
+              text: "Checkout below",
+              confirmButtonText: "OK",
+              background: "black",
+              color: "white",
+            });
+
             onAdd(menuItem);
             storeUserOrders([menuItem]);
           };
