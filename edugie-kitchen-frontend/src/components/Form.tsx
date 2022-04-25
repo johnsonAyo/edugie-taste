@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { OrderContext } from "../context/ordersContext";
-import { hostedUrl } from "../api/api";
+import { hostedUrl,localUrl } from "../api/api";
 import axios from "axios";
 function Form() {
   const { storeUserOrders, getUserOrders, cartItems } =
@@ -34,7 +34,7 @@ function Form() {
     let order = { formData, cartItems, totalAmount };
     storeUserOrders(order);
 
-    console.log(getUserOrders());
+    // console.log(getUserOrders());
 
     try {
       const { data } = await axios({
