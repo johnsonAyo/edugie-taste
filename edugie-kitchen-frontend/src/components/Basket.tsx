@@ -14,7 +14,7 @@ export default function Basket(props: any) {
       <div>
         {cartItems.length === 0 && (
           <div className="text-center-big cart-details   ">
-            Cart is currently empty, Add meal to cart by clicking on order now
+            Cart is currently empty, add meal to cart by clicking on order now
           </div>
         )}
         {cartItems.map((item: any) => (
