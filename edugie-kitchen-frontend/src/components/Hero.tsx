@@ -11,7 +11,7 @@ const Hero = () => {
             Our Green(rooftop) bar and kitchen will tend to the needs of your
             belly. <br />
             Our food menu covers breakfast, brunch lunch & dinner needs; ranging
-            from delicious soups, stews, chops, grills & a variety of rice meals
+            from delicious soups, stews, chops, grills & a variety of rice meals.
           </p>
           <a href="#meals" className="btn btn--full">
             Place your orders now

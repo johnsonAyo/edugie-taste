@@ -125,11 +125,22 @@ function Form() {
                   required
                 >
                   <option value="">Please choose one option:</option>
-                  <option value="100">100</option>
-                  <option value="101">101</option>
-                  <option value="102">102</option>
-                  <option value="103">103</option>
-                  <option value="104">104</option>
+                  <option value="HALO SUITE">HALO SUITE</option>
+                  <option value="EZE SUITE">EZE SUITE</option>
+                  <option value="AIZE SUITE">AIZE SUITE</option>
+                  <option value="UKI SUITE">UKI SUITE</option>
+                  <option value="QUIET STORM">QUIET STORM</option>
+                  <option value="ARABIAN NIGHTS">ARABIAN NIGHTS</option>
+                  <option value="FIFTH AVENUE">FIFTH AVENUE</option>
+                  <option value="KALEIDOSCOPE ">KALEIDOSCOPE </option>
+                  <option value="GARDENIA">GARDENIA</option>
+                  <option value="HERITAGE">HERITAGE</option>
+                  <option value="MOD 1">MOD 1</option>
+                  <option value="MOD 2">MOD 2</option>
+                  <option value="MOD 3">MOD 3</option>
+                  <option value="MOD 4">MOD 4</option>
+                  <option value="MOD 5">MOD 5</option>
+                  <option value="MOD 6">MOD 6</option>
                   value={formData.suite}
                 </select>
               </div>

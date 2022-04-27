@@ -3,19 +3,21 @@ function About() {
   return (
     <section className="section-about">
       <div className="u-center-text u-margin-bottom-big">
-        <h5 className="heading-tertiary text-center">Deliciousness at your request</h5>
+        <h5 className="heading-tertiary text-center">
+          Deliciousness at your request
+        </h5>
       </div>
       <div className="row">
         <div className="about">
-          <p className="heading-text">
+          <p className="heading-text text-center">
             One taste and you'd surely be wanting more of our mouthwatering
-            meals Drinks are Available at affordable rates in a serene
-            environments
+            meals. Drinks are available at affordable rates in a serene
+            environment.
           </p>
 
-          <p className="heading-text">
-            Drink & Dine with the starts at our Green(rooftop) bar, shots,
-            liquor, soda's and more for your relaxation and thirst.
+          <p className="heading-text text-center">
+            Dine & drink with the stars at our Green(rooftop) bar . . . Shots,
+            liquor, sodas, and more for your relaxation and thirst.
           </p>
 
           <a href="#meals" className="btn  btn--full text-center">
