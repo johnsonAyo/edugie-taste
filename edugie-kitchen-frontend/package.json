@@ -60,7 +60,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://eduge-admin-backend.herokuapp.com/",
+  "proxy": "http://eduge-admin-backend.herokuapp.com/",
   "devDependencies": {
     "@types/jquery": "^3.5.14",
     "@types/react": "^17.0.41",

@@ -45,13 +45,29 @@ function Form() {
         url: `${hostedUrl}api/orders`,
         method: "POST",
         data: { body: order },
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
       });
-      await axios.post(`${hostedUrl}send_mail`, {
-        order,
-      });
+
+      console.log("got here ********************");
+
+      axios.post(
+        `${hostedUrl}send_mail`,
+        {
+          order,
+        },
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
       setFormData({ fullName: "", phone: "", email: "", suite: "" });
       setCartItems([]);
-      window.location.reload();
       console.log(data);
     } catch (err) {
       console.log(err);
