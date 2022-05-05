@@ -20,7 +20,7 @@ export default function Basket(props: any) {
         {cartItems.map((item: any) => (
           <div key={item._id} className="row food-list ">
             <div className="col-2">{item.title}</div>
-            <div className="col-2">
+            <div className="addRem">
               <button onClick={() => onRemove(item)} className="remove">
                 -
               </button>{" "}

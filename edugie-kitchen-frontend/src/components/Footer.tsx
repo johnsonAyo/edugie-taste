@@ -8,8 +8,8 @@ function Footer() {
           <div className="logo-col">
             <p className="footer-heading">Copyright &copy; </p>
             <p className="copyright">
-              Copyright &copy; 2022 by Edugie Kitchen, subsidiary of Edugie
-              Homes Inc. All rights reserved.
+              Copyright &copy; 2022 by Edugie Taste, subsidiary of Edugie Homes
+              Inc. All rights reserved.
             </p>
           </div>
           <div className="address-col">
@@ -26,7 +26,7 @@ function Footer() {
                 </a>
                 <br />
                 <a className="footer-link" href="mailto:hello@omnifood.com">
-                  hello@edugiekitchen.com
+                  hello@edugieTaste.com
                 </a>
               </p>
             </address>
@@ -36,17 +36,22 @@ function Footer() {
             <ul className="footer-nav">
               <li>
                 <a className="footer-link" href="#meals">
-                  Order Now
+                  Order Now About
                 </a>
               </li>
-              <li>
-                <a className="footer-link" href="#meals">
-                  Available meals
-                </a>
-              </li>
+              <li></li>
               <li>
                 <a className="footer-link" href="#checkout">
-                  Checkout
+                  Checkout Order Now
+                </a>
+              </li>
+              <li>
+                <a
+                  className="footer-link"
+                  href="https://me-eta-two.vercel.app/"
+                >
+                  © Designed and built by&nbsp;
+                  <span className="devname"> Johnson Afuye.</span>
                 </a>
               </li>
             </ul>

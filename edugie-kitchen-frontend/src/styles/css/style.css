@@ -562,11 +562,11 @@ img.small {
   justify-content: center; }
 
 button.add {
-  background-color: #8ff040;
+  background-color: #ffffff;
   width: 3rem; }
 
 button.remove {
-  background-color: #e67e22;
+  background-color: #e62222;
   width: 3rem;
   border: none; }
 
@@ -591,6 +591,16 @@ nav {
 .cart-details {
   font-size: 2rem;
   margin: 2rem; }
+
+.dev {
+  color: white; }
+
+.devname {
+  color: var(--clr-grey-5); }
+
+.addRem {
+  align-items: center;
+  justify-content: center; }
 
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 .hero-text-box {

@@ -12,17 +12,16 @@
 
 nav {
   display: fixed;
-  z-index:100;
+  z-index: 100;
 }
 
 .NavbarItems {
   background-color: rgb(247, 243, 243);
   display: flex;
-  padding: 1rem 0;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
   font-size: 3rem;
-
 }
 
 .navbar-logo {
@@ -32,14 +31,14 @@ nav {
   animation-name: moveInTop;
   animation-duration: 3s;
   animation-timing-function: ease-out;
+
 }
 
 .nav-menu {
   display: grid;
-  font-family: "Beau Rivage", cursive;
   font-weight: 700;
+  font-family: "Lakki Reddy", cursive;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 1rem;
   text-align: center;
   list-style: none;
   justify-content: end;
@@ -47,6 +46,8 @@ nav {
   animation-name: moveInTop;
   animation-duration: 3s;
   animation-timing-function: ease-out;
+  align-items: center;
+
 }
 
 .nav-links {

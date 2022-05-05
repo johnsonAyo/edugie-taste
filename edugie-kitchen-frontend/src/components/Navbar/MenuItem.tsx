@@ -2,12 +2,12 @@ import { IoIosBasket } from "react-icons/io";
 
 export const MenuItems = [
   {
-    title: "About Edugie kitchen",
+    title: "About Edugie Taste",
     url: "#about",
     cName: "nav-links",
   },
   {
-    title: "Meals Menu",
+    title: "Edugie Menu",
     url: "#meals",
     cName: "nav-links",
   },
