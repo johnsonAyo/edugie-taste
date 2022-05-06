@@ -3,6 +3,7 @@
 # dependencies
 
 node_modules/
+src/styles/sass
 lib/
 config.env/
 /config.env/

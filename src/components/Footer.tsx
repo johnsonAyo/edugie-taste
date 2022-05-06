@@ -45,14 +45,9 @@ function Footer() {
                   Order Now
                 </a>
               </li>
-              <li></li>
               <li>
-                <a
-                  className="footer-link"
-                  href="https://me-eta-two.vercel.app/"
-                >
-                  © Designed and built by&nbsp;
-                  <span className="devname"> Johnson Afuye.</span>
+                <a className="footer-link" href="#checkout">
+                  Checkout
                 </a>
               </li>
               <li>
