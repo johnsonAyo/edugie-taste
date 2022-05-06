@@ -42,7 +42,7 @@ function Form() {
     });
     try {
       const { data } = await axios({
-        url: `${hostedUrl}api/orders`,
+        url: `${localUrl}api/orders`,
         method: "POST",
         data: { body: order },
         headers: {
@@ -53,8 +53,8 @@ function Form() {
 
       console.log("got here ********************");
 
-      axios.post(
-        `${hostedUrl}send_mail`,
+      await axios.post(
+        `${localUrl}send_mail`,
         {
           order,
         },

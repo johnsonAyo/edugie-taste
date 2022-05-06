@@ -16,8 +16,8 @@ function Footer() {
             <p className="footer-heading">Contact us</p>
             <address className="contacts">
               <p className="address">
-                11, Evbomwan lane off etete, gra & 12 Gbadamosi avenue off nosa
-                Edugie, mtn mast ugbor village road, Benin city, Edo state.
+                11, Evbomwan lane off Etete, GRA & 12 Gbadamosi avenue off Nosa
+                Edugie, MTN mast ugbor village road, Benin city, Edo state.
                 Nigeria
               </p>
               <p>
@@ -35,14 +35,24 @@ function Footer() {
             <p className="footer-heading">Links</p>
             <ul className="footer-nav">
               <li>
-                <a className="footer-link" href="#meals">
-                  Order Now About
+                <a className="footer-link" href="#about">
+                  About
                 </a>
               </li>
               <li></li>
               <li>
-                <a className="footer-link" href="#checkout">
-                  Checkout Order Now
+                <a className="footer-link" href="#meals">
+                  Order Now
+                </a>
+              </li>
+              <li></li>
+              <li>
+                <a
+                  className="footer-link"
+                  href="https://me-eta-two.vercel.app/"
+                >
+                  © Designed and built by&nbsp;
+                  <span className="devname"> Johnson Afuye.</span>
                 </a>
               </li>
               <li>
@@ -50,7 +60,7 @@ function Footer() {
                   className="footer-link"
                   href="https://me-eta-two.vercel.app/"
                 >
-                  © Designed and built by&nbsp;
+                  © Designed by&nbsp;
                   <span className="devname"> Johnson Afuye.</span>
                 </a>
               </li>
