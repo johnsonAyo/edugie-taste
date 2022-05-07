@@ -79,7 +79,7 @@ function Form() {
       <div className="container-reg">
         <div className="cta">
           <div className="cta-text-box">
-            <h2 className="heading-secondary">Edugie Taste Got you covered</h2>
+            <div className="heading-secondary">Edugie taste got you covered</div>
             <p className="cta-text">
               Healthy, tasty and hassle-free meals are waiting for you. Start
               eating well today. You can cancel or pause anytime before you
