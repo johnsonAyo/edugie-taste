@@ -6,7 +6,9 @@ const Hero = () => {
     <section className="section-hero" id="about">
       <div className="hero">
         <div className="hero-text-box">
-          <h1 className="heading-primary">EDUGIE TASTE (TASTE RIPPER)</h1>
+          <h1 className="heading-primary">EDUGIE TASTE</h1>
+          <h1 className="heading-primary">(TASTE RIPPER)</h1>
+
           <p className="hero-description">
             Our Green(rooftop) bar and Taste will tend to the needs of your
             belly. <br />
@@ -35,17 +37,17 @@ const Hero = () => {
         <div className="col-1-of-2">
           <div className="composition">
             <img
-              src="img/edugie-3.jpeg"
+              src="https://res.cloudinary.com/dfi24gqb6/image/upload/v1651881600/IMG-20220506-WA0027_fvoyql.jpg"
               alt="Photo 1"
               className="composition__photo composition__photo--p1"
             />
             <img
-              src="img/edugie-2.jpeg"
+              src="https://res.cloudinary.com/dfi24gqb6/image/upload/v1651881651/IMG-20220506-WA0036_a23jub.jpg"
               alt="Photo 2"
               className="composition__photo composition__photo--p2"
             />
             <img
-              src="img/edugie-1.jpeg"
+              src="https://res.cloudinary.com/dfi24gqb6/image/upload/v1651881638/IMG-20220506-WA0035_zqqcqa.jpg"
               alt="Photo 3"
               className="composition__photo composition__photo--p3"
             />

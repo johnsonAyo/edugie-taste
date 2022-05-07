@@ -11,12 +11,13 @@ function About() {
         <div className="about">
           <p className="heading-text text-center">
             One taste and you'd surely be wanting more of our mouthwatering
-            meals. Drinks are available at affordable rates in a serene
-            environment.
+            meals. Drinks, shots and cocktails are available at affordable rates
+            in our serene oasis. Blow your tastebuds away by ordering some of
+            tasty meals.
           </p>
 
           <p className="heading-text text-center">
-            Dine & drink with the stars at our Green(rooftop) bar . . . Shots,
+            Drink & Dine with the stars at our Green(rooftop) bar . . . Shots,
             liquor, sodas, and more for your relaxation and thirst.
           </p>
 

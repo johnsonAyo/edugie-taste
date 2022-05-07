@@ -8,8 +8,8 @@ function Footer() {
           <div className="logo-col">
             <p className="footer-heading">Copyright &copy; </p>
             <p className="copyright">
-              Copyright &copy; 2022 by Edugie Taste, subsidiary of Edugie Homes
-              Inc. All rights reserved.
+              Copyright &copy; 2022 by Edugie Taste, subsidiary of Edugie Homes.
+              <p className="copyright"> All rights reserved. </p>
             </p>
           </div>
           <div className="address-col">
@@ -21,12 +21,15 @@ function Footer() {
                 Nigeria
               </p>
               <p>
-                <a className="footer-link" href="tel:415-201-6370">
-                  +234-9062-293-712
+                <a className="footer-link" href="tel:09062293712">
+                  09062293712
                 </a>
                 <br />
-                <a className="footer-link" href="mailto:hello@omnifood.com">
-                  hello@edugieTaste.com
+                <a
+                  className="footer-link"
+                  href="mailto:Edugiekitchen@gmail.com"
+                >
+                  Edugiekitchen@gmail.com
                 </a>
               </p>
             </address>
@@ -39,7 +42,6 @@ function Footer() {
                   About
                 </a>
               </li>
-              <li></li>
               <li>
                 <a className="footer-link" href="#meals">
                   Order Now
