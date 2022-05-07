@@ -114,7 +114,7 @@ function Form() {
               </div>
 
               <div>
-                <label htmlFor="suite">Suite Number</label>
+                <label htmlFor="suite">Suite</label>
                 <select
                   id="suite"
                   value={formData.suite}
