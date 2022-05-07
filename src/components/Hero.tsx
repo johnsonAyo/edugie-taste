@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero">
         <div className="hero-text-box">
           <h1 className="heading-primary">EDUGIE TASTE</h1>
-          <h1 className="heading-primary">(TASTE RIPPER)</h1>
+          
 
           <p className="hero-description">
             Our Green(rooftop) bar and kitchen will tend to the needs of your
