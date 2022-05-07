@@ -13,7 +13,7 @@ function About() {
             One taste and you'd surely be wanting more of our mouthwatering
             meals. Drinks, shots and cocktails are available at affordable rates
             in our serene oasis. Blow your tastebuds away by ordering some of
-            tasty meals.
+            our tasty meals.
           </p>
 
           <p className="heading-text text-center">
@@ -22,7 +22,7 @@ function About() {
           </p>
 
           <a href="#meals" className="btn  btn--full text-center">
-            Satisfy your taste buds today! &rarr;
+            Satisfy your taste buds today!
           </a>
         </div>
       </div>

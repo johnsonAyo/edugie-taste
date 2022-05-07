@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="heading-primary">(TASTE RIPPER)</h1>
 
           <p className="hero-description">
-            Our Green(rooftop) bar and Taste will tend to the needs of your
+            Our Green(rooftop) bar and kitchen will tend to the needs of your
             belly. <br />
             Our food menu covers breakfast, brunch lunch & dinner needs; ranging
             from delicious soups, stews, chops, grills & a variety of rice
