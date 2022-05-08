@@ -27,8 +27,7 @@ const PrivacyPolicy = () => {
         In order to provide you with the services offered by edugie taste you
         may be required by edugie taste to provide us with personal
         informations. Personal information is information which identifies you
-        as an individual, including but not limited to, your name, contact
-        details etc
+        as an individual, including but not to, your name, contact details etc
       </p>
       <h3 className="pheader">How We Obtain Information About You?</h3>
       <p className="pcontent">
