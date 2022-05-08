@@ -88,6 +88,23 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin: 0;
 }
 
+.privacy {
+  background-color: white;
+  color: black;
+
+  padding: 5rem 10rem;
+}
+
+.pheader {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+.pcontent {
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+
 .delivered-text {
   font-size: 1.8rem;
   font-weight: 600;
@@ -704,7 +721,7 @@ nav {
 .cart-details {
   font-size: 2rem;
   margin: 2rem;
-  line-height:4rem;
+  line-height: 4rem;
 }
 
 .dev {

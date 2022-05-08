@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <>
@@ -7,6 +9,23 @@ function Footer() {
         <div className="container grid grid--footer">
           <div className="logo-col">
             <p className="footer-heading">Copyright &copy; </p>
+            <ul className="footer-nav">
+              <li>
+                <Link className="footer-link" to={"/privacy"}>
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link className="footer-link" to={"/termsAndConditions"}>
+                  Terms and Conditions
+                </Link>
+              </li>
+              <li>
+                <Link className="footer-link" to={"/termsOfUse"}>
+                  Terms of Use
+                </Link>
+              </li>
+            </ul>
             <p className="copyright">
               Copyright &copy; 2022 by Edugie Taste, subsidiary of Edugie Homes.
               <p className="copyright"> All rights reserved. </p>
@@ -40,6 +59,11 @@ function Footer() {
               <li>
                 <a className="footer-link" href="#about">
                   About
+                </a>
+              </li>
+              <li>
+                <a className="footer-link" href="#meals">
+                  Available Meals
                 </a>
               </li>
               <li>
