@@ -51,7 +51,10 @@ function Form() {
         },
       });
 
-      console.log("got here ********************");
+      console.log("it got here");
+      setFormData({ fullName: "", phone: "", email: "", suite: "" });
+      setCartItems([]);
+      console.log("so t should work");
 
       await axios.post(
         `${hostedUrl}send_mail`,
@@ -65,10 +68,6 @@ function Form() {
           },
         }
       );
-
-      setFormData({ fullName: "", phone: "", email: "", suite: "" });
-      setCartItems([]);
-      console.log(data);
     } catch (err) {
       console.log(err);
     }
@@ -79,7 +78,9 @@ function Form() {
       <div className="container-reg">
         <div className="cta">
           <div className="cta-text-box">
-            <div className="heading-secondary">Edugie taste got you covered</div>
+            <div className="heading-secondary">
+              Edugie taste got you covered
+            </div>
             <p className="cta-text">
               Healthy, tasty and hassle-free meals are waiting for you. Start
               eating well today. You can cancel or pause anytime before you
