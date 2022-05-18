@@ -15,10 +15,12 @@ function Orders(props) {
   useEffect(() => {
     if (mealsData.length) {
       setMenuItems(mealsData);
+      const SOFTDRINKS = "SOFT DRINKS";
       const allCategories = [
         ...new Set(mealsData.map((item) => item.category)),
       ];
       setCategories(allCategories);
+      // setCategories(SOFTDRINKS);
     }
   }, [mealsData]);
 

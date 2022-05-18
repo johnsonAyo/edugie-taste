@@ -1514,6 +1514,14 @@ Menu
   .photo {
     height: 175px;
   }
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 20rem;
+    width: 20rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
